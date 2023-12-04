@@ -69,6 +69,15 @@ p {
     margin-bottom: 1rem;
 }
 
+#right {
+    padding: 1.5rem;
+}
+
+#right-title {
+    font-weight: 900;
+    text-align: left;
+}
+
 
 button {
     width: 80%;
