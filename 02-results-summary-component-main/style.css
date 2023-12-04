@@ -70,5 +70,16 @@ p {
 }
 
 
+button {
+    width: 80%;
+    background-color: #303b59;
+    color: #fff;
+    font-size: 1rem;
+    padding: 1rem 0;
+    margin: 1rem auto;
+    border: none;
+    border-radius: 50px;
+}
+
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
