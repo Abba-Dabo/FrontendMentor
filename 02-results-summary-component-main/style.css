@@ -1,2 +1,74 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+
+p {
+    font-size: 18px;
+    line-height: 1.2;
+}
+
+.container {
+    background-color: #fff;
+    width: 375px;
+    margin: 0 auto;
+    text-align: center;
+    box-shadow: 0 0 10px 10px hsla(221, 100%, 96%, 1);
+    border-radius: 20px;
+}
+
+#left {
+    width: 100%;
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    color: hsla(0, 0%, 100%, 0.8);
+    border-radius: 20px;
+    padding: 1rem;
+}
+
+#left-title, #right-title {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+#total-average {
+    background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin: 1em auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#total-average h1 {
+    font-size: 2.8em;
+    color: #fff;
+}
+
+#total-average--para {
+    font-size: .8em;
+}
+
+#remark-title {
+    color: #fff;
+    font-size: 1.5em;
+    line-height: 1.8em;
+}
+
+#left-para {
+    font-size: .8em;
+    margin: 0 5em;
+    margin-bottom: 1rem;
+}
+
+
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
