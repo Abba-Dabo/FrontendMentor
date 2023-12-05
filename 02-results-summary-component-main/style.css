@@ -103,24 +103,56 @@ button {
 }
 
 #right img {
-    height: 1rem;
+    width: 1rem;
     margin-right: .5rem;
 }
 
 #reaction {
     background-color: hsla(0, 100%, 67%, .1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#reaction-left {
+    color: hsla(0, 100%, 67%, 1);
 }
 
 #memory {
     background-color: hsla(39, 100%, 56%, .1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#memory-left {
+    color: hsla(39, 100%, 56%, 1);;
 }
 
 #verbal {
     background-color: hsla(166, 100%, 37%, .1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#verbal-left {
+    color: hsla(166, 100%, 37%, 1);
 }
 
 #visual {
     background-color: hsla(234, 85%, 45%, .1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#visual-left {
+    color: hsla(234, 85%, 45%, 1);
+}
+
+.summary-item--left {
+    display: flex;
 }
 
 .attribution { font-size: 11px; text-align: center; }
