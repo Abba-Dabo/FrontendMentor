@@ -102,6 +102,10 @@ button {
     width: 100%;
 }
 
+.summary-item h3 {
+   font-size: .8rem;
+}
+
 #right img {
     width: 1rem;
     margin-right: .5rem;
@@ -153,6 +157,14 @@ button {
 
 .summary-item--left {
     display: flex;
+}
+
+.item-right--d {
+    opacity: .6;
+}
+
+#reaction-right, #memory-right, #verbal-right, #visual-right {
+    color: #303b59;
 }
 
 .attribution { font-size: 11px; text-align: center; }
