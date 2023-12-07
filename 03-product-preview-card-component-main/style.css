@@ -1,6 +1,11 @@
 :root {
     --font-one: 'Montserrat', Sans-serif;
-    --font-two: 'Fraunces', serif;
+    --font-two: 'Fraunces 144pt Soft', serif;
+    --color-one: hsla(212, 21%, 14%, 1);
+    --color-two: hsla(228, 12%, 48%, 1);
+    --color-three: hsla(0, 0%, 100%, 1);
+    --color-four: hsla(158, 36%, 37%, 1);
+    --color-five: hsla(30, 38%, 92%, 1);
 }
 
 * {
@@ -23,6 +28,53 @@ body {
 img {
     width: 100%;
     border-radius: 10px 10px 0 0;
+}
+
+.right-container {
+    padding: 1.2rem;
+}
+
+#title {
+    font-family: var(--font-two);
+    font-size: 2.3em;
+    font-weight: 700;
+    line-height: 1;
+    margin: .4em 0;
+}
+
+#product {
+    font-family: var(--font-one);
+    font-size: .8em;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .5em;
+    opacity: .5;
+}
+
+#about-para {
+    font-family: var(--font-one);
+    font-size: 14px;
+    font-weight: 500;
+    opacity: .5;
+}
+
+#prices {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: .3em ;
+}
+
+#current-price {
+    color: hsl(158, 36%, 37%);
+    font-family: var(--font-two);
+    font-size: 2rem;
+    margin-right: .3em; 
+}
+
+#initial-price {
+    font-family: var(--font-one);
+    font-size: 14px;    
 }
 
 .attribution { font-size: 11px; text-align: center; }
