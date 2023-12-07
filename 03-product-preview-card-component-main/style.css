@@ -15,12 +15,14 @@
 }
 
 body {
-    background-color: hsl(30, 38%, 92%);
+    background-color: var(--color-five);
+    font-family: var(--font-one);
+    font-size: 14px;
 }
 
 .container {
     width: 375px;
-    background-color: hsl(0, 0%, 100%);
+    background-color: var(--color-three);
     margin: 1em auto;
     border-radius: 10px;
 }
@@ -35,27 +37,30 @@ img {
 }
 
 #title {
+    color: var(--color-one);
     font-family: var(--font-two);
-    font-size: 2.3em;
+    font-size: 2.8em;
     font-weight: 700;
     line-height: 1;
     margin: .4em 0;
 }
 
 #product {
+    color: var(--color-two);
     font-family: var(--font-one);
-    font-size: .8em;
+    font-size: 1em;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: .5em;
-    opacity: .5;
 }
 
 #about-para {
+    color: var(--color-two);
     font-family: var(--font-one);
-    font-size: 14px;
+    font-size: 1rem;
     font-weight: 500;
-    opacity: .5;
+    line-height: 1.5em;
+    margin: 1em 0;
 }
 
 #prices {
@@ -66,15 +71,17 @@ img {
 }
 
 #current-price {
-    color: hsl(158, 36%, 37%);
+    color: var(--color-four);
     font-family: var(--font-two);
     font-size: 2rem;
-    margin-right: .3em; 
+    margin-right: .6em; 
 }
 
 #initial-price {
+    color: var(--color-two);
     font-family: var(--font-one);
-    font-size: 14px;    
+    font-size: 1rem;    
+    text-decoration: line-through;
 }
 
 .attribution { font-size: 11px; text-align: center; }
