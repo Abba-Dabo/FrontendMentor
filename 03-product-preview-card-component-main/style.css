@@ -33,7 +33,7 @@ img {
 }
 
 .right-container {
-    padding: 1.2rem;
+    padding: 1.5rem;
 }
 
 #title {
@@ -67,14 +67,14 @@ img {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    margin: .3em ;
+    margin: .3em 0 1em 0 ;
 }
 
 #current-price {
     color: var(--color-four);
     font-family: var(--font-two);
     font-size: 2rem;
-    margin-right: .6em; 
+    margin-right: 0.6em; 
 }
 
 #initial-price {
@@ -82,6 +82,19 @@ img {
     font-family: var(--font-one);
     font-size: 1rem;    
     text-decoration: line-through;
+}
+
+#add-to-button {
+    background-color: var(--color-four);
+    color: var(--color-three);
+    width: 100%;
+    font-size: 1rem;
+    font-family: var(--font-one);
+    font-weight: 700;
+    padding: 1em;
+    outline: none;
+    border: none;
+    border-radius: .5em;
 }
 
 .attribution { font-size: 11px; text-align: center; }
