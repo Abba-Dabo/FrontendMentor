@@ -1,3 +1,36 @@
+:root {
+    --clr-blue: hsl(215, 51%, 70%);
+    --clr-cyan: hsl(178, 100%, 50%);
+    --clr-white: hsl(0, 0%, 100%);
+    --clr-blue--main: hsl(217, 54%, 11%);
+    --clr-blue--card: hsl(216, 50%, 16%);
+    --clr-blue--line: hsl(215, 32%, 27%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font: 300 16px 'Outfit', San-serif;
+    background-color: var(--clr-blue--main);
+}
+
+.container {
+    max-width: 375px;
+    background-color: var(--clr-blue--card);
+    margin: 1.5rem auto;
+    padding: 1.5rem;
+    box-shadow: 0 10px 40px hsla(0, 0%, 0%, 0.1);
+    border-radius: 15px;
+}
+
+#main-image {
+    width: 100%;
+    border-radius: 10px;
+}
 
 
 .attribution { font-size: 11px; text-align: center; }
