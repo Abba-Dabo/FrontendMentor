@@ -109,6 +109,28 @@ h2 {
     border: 1px solid var(--clr--transparent-white);
 }
 
+@media screen and (min-width: 376px) {
+    .outer-container {
+        max-width: 750px;
+    }
+
+    .container {
+        display: flex;
+    }
+    
+    .para {
+        margin: 1rem 0 3rem 0;
+    }
+        
+    .sedans-container {
+        border-radius: .3rem 0 0 .3rem;
+    }   
+
+    .luxurys-container {
+        border-radius: 0 .3rem .3rem 0;
+    }
+
+}
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
