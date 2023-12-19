@@ -50,10 +50,19 @@ h2 {
 }
 
 .learn-more {
-    color: var(--clr--veryLight-gray);
-    padding: .5em 1em;
+    background-color: var(--clr--veryLight-gray);
+    display: inline-block;
+    padding: .5em 1.5em;
+    text-decoration: none;
     border-radius: 50rem;
-    border: none;
+    border: 1px solid var(--clr--transparent-white);
+}
+
+.learn-more:hover {
+    display: inline-block;
+    padding: .5em 1.5em;
+    text-decoration: none;
+    border-radius: 50rem;
 }
 
 .sedans-container {
@@ -65,12 +74,24 @@ h2 {
     color: var(--clr--bright-orange);
 }
 
+.sedans-container .learn-more:hover {
+    background-color: var(--clr--bright-orange);
+    color: var(--clr--transparent-white);
+    border: 1px solid var(--clr--transparent-white);
+}
+
 .suvs-container {
     background-color: var(--clr--dark-cyan);
 }
 
 .suvs-container .learn-more {
     color: var(--clr--dark-cyan);
+}
+
+.suvs-container .learn-more:hover {
+    background-color: var(--clr--dark-cyan);
+    color: var(--clr--transparent-white);
+    border: 1px solid var(--clr--transparent-white);
 }
 
 .luxurys-container {
@@ -81,6 +102,13 @@ h2 {
 .luxurys-container .learn-more {
     color: var(--clr--veryDark-cyan);
 }
+
+.luxurys-container .learn-more:hover {
+    background-color: var(--clr--veryDark-cyan);
+    color: var(--clr--transparent-white);
+    border: 1px solid var(--clr--transparent-white);
+}
+
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
