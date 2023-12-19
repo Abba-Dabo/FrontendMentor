@@ -16,7 +16,8 @@
 
 body {
     background-color: var(--clr--veryLight-gray);
-    font-family: 14px;
+    font-family: var(--ff-one);
+    font-size: 14px;
     font-weight: 400;
 }
 
@@ -24,9 +25,6 @@ body {
     max-width: 375px;
     margin: 1rem auto;
     padding: 2rem;
-}
-
-.container {
 }
 
 .containers {
@@ -47,7 +45,6 @@ h2 {
 
 .para {
     color: var(--clr--transparent-white);
-    font-family: var(--ff-one);
     font-size: .7rem;
     margin: 1rem 0;
 }
@@ -59,7 +56,31 @@ h2 {
     border: none;
 }
 
+.sedans-container {
+    background-color: var(--clr--bright-orange);
+    border-radius: .3rem .3rem 0 0;
+}
 
+.sedans-container .learn-more {
+    color: var(--clr--bright-orange);
+}
+
+.suvs-container {
+    background-color: var(--clr--dark-cyan);
+}
+
+.suvs-container .learn-more {
+    color: var(--clr--dark-cyan);
+}
+
+.luxurys-container {
+    background-color: var(--clr--veryDark-cyan);
+    border-radius: 0 0 .3rem .3rem;
+}
+
+.luxurys-container .learn-more {
+    color: var(--clr--veryDark-cyan);
+}
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
