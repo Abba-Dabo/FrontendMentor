@@ -1,3 +1,69 @@
+:root {
+    --clr--dark-cyan: hsl(185, 75%, 39%);
+    --clr--veryDarkDesaturated-blue: hsl(229, 23%, 23%);
+    --clr--darkGrayish-blue: hsl(227, 10%, 46%);
+    --clr--dark-gray: hsl(0, 0%, 59%);
+    --clr--white: hsl(0, 0%, 100%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--clr--dark-cyan);
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 18px;
+    overflow: hidden;
+    height: 100vh;
+}
+
+.outer-container {
+    max-width: 375px;
+    margin: 5rem auto;
+    padding: 1rem;
+}
+
+.container {
+    background-color: var(--clr--white);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 1rem;
+}
+
+.bg-image {
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+#top-image {
+    top: -30%;
+    left: -40%;
+}
+
+#bottom-image {
+    top: 60%;
+    left: 40%;
+}
+
+
+#pattern-image {
+    width: 100%;
+    border-radius: 1rem 1rem 0 0;
+}
+
+#person {
+    margin: -48px auto;
+    border-radius: 50%;
+    border: 5px solid var(--clr--white);
+}
+
+
+
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }

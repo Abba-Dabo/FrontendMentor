@@ -8,25 +8,31 @@
   <title>Frontend Mentor | Profile card component</title>
 </head>
 <body>
-  <img src="/images/bg-pattern-top.svg" alt="top background image" class="" id="top-image">
-  <img src="/images/bg-pattern-bottom.svg" alt="bottom background image" id="bottom-image">
+  <img src="/images/bg-pattern-top.svg" alt="top background image" class="bg-image" id="top-image">
+  <img src="/images/bg-pattern-bottom.svg" alt="bottom background image" class="bg-image" id="bottom-image">
   <div class="outer-container">
-    <img src="/images/bg-pattern-bottom.svg" alt="">
     <div class="container">
-      <img src="/images/image-victor.jpg" alt="image of a person">
-      <h2 class="name">Victor Crest</h2>
-      <h2 class="age">26</h2>
-      <p id="city">London</p>
+      <img src="/images/bg-pattern-card.svg" alt="background pattern image" id="pattern-image">
+      <img src="/images/image-victor.jpg" alt="image of a person" id="person">
+      <div id="name-age">
+        <h2 class="name">Victor Crest</h2>
+        <p class="age">26</p>
+      </div>
+      <p class="city">London</p>
     
       <div class="stats">
-        <h2>80K</h2>
-        <p>Followers</p>
-      
-        <h2>803K</h2>
-       <p>Likes</p>
-      
-        <h2>1.4K</h2>
-        <p>Photos</p>
+        <div class="followers">
+          <h2>80K</h2>
+          <p>Followers</p>
+        </div>
+        <div class="likes">
+          <h2>803K</h2>
+          <p>Likes</p>
+        </div>
+        <div class="photos">
+          <h2>1.4K</h2>
+          <p>Photos</p>
+        </div>
       </div>
     </div>
   </div>
