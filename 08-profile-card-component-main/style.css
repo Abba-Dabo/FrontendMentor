@@ -61,6 +61,32 @@ body {
     border: 5px solid var(--clr--white);
 }
 
+#name-age {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+}
+
+.name {
+    color: var(--clr--veryDarkDesaturated-blue);
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-right: 1rem;
+}
+
+.age {
+    color: var(--clr--darkGrayish-blue);
+}
+
+.city {
+    color: var(--clr--darkGrayish-blue);
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: 1em;
+    margin-bottom: 2em;
+}
+
 
 
 
