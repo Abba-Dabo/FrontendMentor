@@ -22,7 +22,7 @@ body {
 
 .outer-container {
     max-width: 375px;
-    margin: 5rem auto;
+    margin: 8rem auto;
     padding: 1rem;
 }
 
@@ -46,9 +46,9 @@ body {
 }
 
 #bottom-image {
-    top: 60%;
-    left: 40%;
-}
+    top: 70%;
+    left: 60%;
+}   
 
 #pattern-image {
     width: 100%;
@@ -108,6 +108,33 @@ body {
     font-weight: 400;
     letter-spacing: .1em;
     margin: .5em 0;
+}
+
+@media screen and (min-width: 376px) {
+    
+    .outer-container {
+        max-width: 375px;
+        margin: 8rem auto;
+        padding: 0rem;
+    }
+
+    .container {
+        background-color: var(--clr--white);
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        border-radius: 1rem;
+    }
+
+    #top-image {
+        top: -135%;
+        left: -50%;
+    }
+
+    #bottom-image {
+        top: 55%;
+        left: 35%;
+    }
 }
 
 .attribution { font-size: 11px; text-align: center; }
