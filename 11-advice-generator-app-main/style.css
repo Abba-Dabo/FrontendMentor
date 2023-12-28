@@ -1,2 +1,18 @@
+:root {
+    --clr-light--cyan: hsl(193, 38%, 86%);
+    --clr-neon--green: hsl(150, 100%, 66%);
+    --clr-grayish--blue: hsl(217, 19%, 38%);
+    --clr-darkGrayish--blue: hsl(217, 19%, 24%);
+    --clr-dark--blue: hsl(218, 23%, 16%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {}
+
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
