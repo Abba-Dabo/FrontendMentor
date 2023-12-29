@@ -67,6 +67,11 @@ body {
     margin-top: -2rem;
 }
 
+#dice:hover{
+    cursor: pointer;
+    box-shadow: 0 0 50px 1px var(--clr-neon--green);
+}
+
 @media screen and (min-width: 376px) {
         
     .outer-container {
