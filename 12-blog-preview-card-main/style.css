@@ -71,5 +71,21 @@ body {
 .avatar--name img {
     width: 1.8rem;
 }
+
+@media screen and (min-width: 376px) {
+      
+    .outer-container {
+        max-width: 1440px;
+        margin: 20vh auto;
+        padding: 2rem;
+    }
+        
+    .container {
+        margin: 0 auto;
+        max-width: 375px;
+    }
+
+}
+
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
