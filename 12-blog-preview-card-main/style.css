@@ -85,6 +85,9 @@ body {
         max-width: 375px;
     }
 
+    .para {
+        font-size: 1rem;
+    }
 }
 
 .attribution { font-size: 11px; text-align: center; }
