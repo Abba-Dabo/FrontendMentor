@@ -18,6 +18,17 @@ body {
     font-size: 16px;
 }
 
+.outer-container {
+    max-width: 375px;
+    margin: 20vh auto;
+    padding: 2rem;
+}
+
+.container {
+    background-color: var(--clr-white);
+    border-radius: .5rem;
+    padding: 1rem;
+}
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
