@@ -23,13 +23,13 @@ body {
 .outer-container {
     background-color: var(--clr-white);
     max-width: 375px;
-    height: 100vh;
+    /* height: 100vh; */
     margin: 0 auto;
     overflow-y: hidden;
 }
 
-.normal-state {
-    display: block;
+.signup-state {
+    display: none;
 }
 
 .cta-container {
@@ -102,8 +102,40 @@ p {
 }
 
 .success-state {
-    display: none;
+    display: block;
+    height: 100vh;
+    padding: 1rem;
 }
+
+.success-state img {
+    margin-top: 15vh;
+    margin-bottom: 2rem;
+}
+
+.success-state h1 {
+    margin-bottom: 1rem;
+    padding-right: 1em;
+}
+
+.subcriber-email {
+    color: var(--clr-darkSlate--grey);
+    font-weight: var(--fw-two);
+}
+
+.success-state button {
+    width: 100%;
+    background-color: var(--clr-darkSlate--grey);
+    color: var(--clr-white);
+    font-weight: var(--fw-two);
+    border: none;
+    border-radius: .5rem;
+    padding: .8rem 0;
+    margin-top: 35vh;
+}
+
+
+
+
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
