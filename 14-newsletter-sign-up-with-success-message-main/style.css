@@ -1,5 +1,6 @@
 :root {
     --clr-tomato: hsl(4, 100%, 67%);
+    --clr-red: hsl(346, 100%, 66%);
     --clr-grey: hsl(231, 7%, 60%);
     --clr-charcoal--grey: hsl(235, 18%, 26%);
     --clr-darkSlate--grey: hsl(234, 29%, 20%);
@@ -29,7 +30,7 @@ body {
 }
 
 .signup-state {
-    display: none;
+    display: block;
 }
 
 .cta-container {
@@ -102,7 +103,7 @@ p {
 }
 
 .success-state {
-    display: block;
+    display: none;
     height: 100%;
     padding: 1rem;
 }
@@ -140,7 +141,7 @@ p {
 @media screen and (min-width: 376px) {
         
     .outer-container {
-        background-color: transparent;
+        background-color: var(--clr-white);
         max-width: 600px;
         height: auto;
         margin: 20vh auto;
@@ -150,16 +151,22 @@ p {
 
     .signup-state {
         background-color: var(--clr-white);
-        display: none;
+        display: grid;
         grid-template-columns: repeat(2, 50%);
         gap: 1rem;
         padding: 1rem;
     }
 
+    .signup-state button:hover{
+        background: linear-gradient(to right, var(--clr-red), var(--clr-tomato));
+        cursor: pointer;
+        box-shadow: 0 10px 10px -8px var(--clr-red);
+    }
+
         
     .success-state {
         background-color: var(--clr-white);
-        display: block;
+        display: none;
         height: auto;
         padding: 2rem 2.5rem;
         margin: 0 7rem;
@@ -184,6 +191,11 @@ p {
     .success-state button {
         width: 100%;
         margin-top: 3rem;
+    }
+
+    .success-state button:hover {
+        background: linear-gradient(var(--clr-red), var(--clr-tomato));
+        cursor: pointer;
     }
 
 }
