@@ -157,6 +157,12 @@ p {
         padding: 1rem;
     }
 
+    #email-form input:focus {
+        border: 1px solid var(--clr-darkSlate--grey);
+        cursor: pointer;
+    }
+    
+
     .signup-state button:hover{
         background: linear-gradient(to right, var(--clr-red), var(--clr-tomato));
         cursor: pointer;
