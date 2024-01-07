@@ -70,6 +70,12 @@ hr {
     padding: .7rem .8rem;
     border: 1px solid var(--clr-light--grey);
     border-radius: .5rem;
+    outline: none;
+}
+
+.inputs-container input:focus {
+    border: 1px solid var(--clr-purple);
+    cursor: pointer;
 }
 
 .inputs-container p {
@@ -98,6 +104,11 @@ hr {
     margin: -4.8rem;
     padding: 1rem;
     border-radius: 100%;
+}
+
+.displays-container img:hover {
+    background-color: var(--clr-off--black);
+    cursor: pointer;
 }
 
 .displays-container h1 {
