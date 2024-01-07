@@ -13,26 +13,26 @@
       <div class="inputs-container">
         <div id="day-container">
           <label for="day">DAY</label>
-          <input type="number" name="Day" id="day" placeholder="DD">
+          <input type="datetime" name="Day" id="day" placeholder="DD">
           <p>Validation message</p>
         </div>
-        <div id="month-container">
+        <div id="month-container" >
           <label for="month">MONTH</label>
-          <input type="number" name="month" id="month" placeholder="MM">
+          <input type="datetime" name="month" id="month" placeholder="MM">
           <p>Validation message</p>
         </div>
         <div id="year-container">
           <label for="year">YEAR</label>
-          <input type="number" name="year" id="year" placeholder="YYYY">
+          <input type="datetime" name="year" id="year" placeholder="YYYY">
           <p>Validation message</p>
         </div>
       </div> 
       <div class="displays-container">
         <img src="/assets/images/icon-arrow.svg" alt="icon for conversion to start">
         <div id="display-board">
-         <h1 id="years-display">-- years</h1> 
-         <h1 id="months-display">-- months</h1> 
-         <h1 id="days-display">-- days</h1> 
+         <h1 id="years-display"><span class="numbers" id="year-number">--</span> years</h1> 
+         <h1 id="months-display"><span class="numbers" id="month-number">--</span> months</h1> 
+         <h1 id="days-display"><span class="numbers" id="day-number">--</span> days</h1> 
         </div>
       </div>
       
