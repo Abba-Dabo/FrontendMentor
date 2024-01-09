@@ -37,12 +37,12 @@ body {
 }
 
 .rating-state {
-    display: block;
+    display: none;
 }
 
 .rating-state img {
     background-color: var(--clr-low--grey);
-    padding: 1rem;
+    padding: .8rem;
     border-radius: 100%;
 }
 
@@ -53,6 +53,7 @@ body {
 }
 
 .sub-heading {
+    line-height: 1.5em;
     margin-bottom: 2rem;
 }
 
@@ -84,7 +85,30 @@ body {
 }
 
 .thanks-state {
-    display: none;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    text-align: center;
+    gap: 1.5rem;
+    padding: 1.5rem 0;
+}
+
+.rating-result {
+    background-color: var(--clr-low--grey);
+    color: var(--clr-orange);
+    padding: .5em 1em;
+    border-radius: 10em;
+}
+
+#thanks {
+    color: var(--clr-white);
+    font-size: 1.6rem;
+    margin-top: .5rem;
+    line-height: 1em;
+}
+
+.appreciation {
+    line-height: 1.5em;
 }
 
 .attribution { font-size: 11px; text-align: center; }
