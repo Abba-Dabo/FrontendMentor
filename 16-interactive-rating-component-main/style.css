@@ -111,5 +111,21 @@ body {
     line-height: 1.5em;
 }
 
+@media screen and (min-width: 376px) {
+        
+    .outer-container {
+        padding: 0rem;
+    }
+   
+    .rating-state {
+        display: none;
+    }
+        
+    .thanks-state {
+        display: flex;
+    }
+
+}
+
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
