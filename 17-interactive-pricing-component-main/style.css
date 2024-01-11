@@ -107,7 +107,73 @@ p {
 
 #billing-type--container {
     grid-area: billing-type--container;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
     position: relative;
+    margin-top: 2rem;
+    padding: .9em;
+}
+
+/* toggle switch */
+#billing-type--container .switch {
+    position: relative;
+    display: inline-block;
+    width: 36px;
+    height: 22px;
+}
+
+#billing-type--container .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+#billing-type--container .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--clr-Light-Grayish-Blue--Toggle-Background);
+    -webkit-transform: .4s;
+    transition: .4s;
+}
+
+#billing-type--container .slider::before {
+    position: absolute;
+    content: "";
+    height: 14px;
+    width: 14px;
+    left: 4px;
+    bottom: 4px;
+    background-color: var(--clr-NeutralWhite--Pricing-Component-Background);
+    -webkit-transform: .4s;
+    transition: .4s;
+}
+
+#billing-type--container input:checked + .slider {
+    background-color: var(--clr-Light-Grayish-Blue--Toggle-Background);
+}
+
+#billing-type--container input:focus + .slider {
+    box-shadow: 0 0 1px var(--clr-Light-Grayish-Blue--Toggle-Background);
+}
+
+#billing-type--container input:checked + .slider::before {
+    -webkit-transform: translateX(14px);
+    -ms-transform: translateX(14px);
+    transform: translateX(14px);
+}
+
+#billing-type--container .slider.round {
+    border-radius: 20px;
+}
+
+#billing-type--container .slider.round::before {
+    border-radius: 50%;
 }
 
 #discount {
@@ -118,11 +184,15 @@ p {
     padding: .05em .5em;
     position: absolute;
     top: 0%;
-    left: 85%;
+    left: 95%;
+    margin-top: .5em;
     border-radius: 1rem;
 }
 
-hr {}
+hr {
+    border: .1px solid var(--clr-Light-Grayish-Blue--Empty-Slider-Bar);
+    opacity: .8;
+}
 
 .benefits-list {
     display: flex;
