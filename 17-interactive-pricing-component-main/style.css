@@ -4,7 +4,7 @@
     --clr-Light--Grayish-Red-Discount-Background: hsl(14, 92%, 95%);
     --clr-Light-Red-Discount-Text: hsl(15, 100%, 70%);
     --clr-Pale-Blue--CTA-Text: hsl(226, 100%, 87%);
-    --clr-NeutralWhite--Pricing-Component-Background: hsl (0, 0%, 100%);
+    --clr-NeutralWhite--Pricing-Component-Background: hsl(0, 0%, 100%);
     --clr-Very-Pale-Blue--Main-Background: hsl(230, 100%, 99%);
     --clr-Light-Grayish-Blue--Empty-Slider-Bar: hsl(224, 65%, 95%);
     --clr-Light-Grayish-Blue--Toggle-Background: hsl(223, 50%, 87%);
@@ -35,6 +35,121 @@ body {
     height: 100vh;
     position: relative;
     margin: 0 auto;
+    z-index: -2;
+}
+
+.container {
+    padding: 1.5rem;
+}
+
+#pattern-circles {
+    width: 7.5rem;
+    position: absolute;
+    top: 5%;
+    left: 35%;
+    z-index: -1;
+}
+
+p {
+    line-height: 1.4rem;
+}
+
+.heading {
+    color: var(--clr-Dark-Desaturated-Blue--Text-And-CTA-Background);
+    font-size: 1.2rem;
+    font-weight: var(--fw-two);
+    letter-spacing: .03em;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.sub-heading {
+    font-size: .8rem;
+    padding: 0 4.5rem;
+    margin-bottom: 3.5rem;
+}
+
+.card {
+    background-color: var(--clr-NeutralWhite--Pricing-Component-Background);
+    border-radius: 1rem;
+    font-size: .8rem;
+    box-shadow: 0 5px 10px -10px var(--clr-Dark-Desaturated-Blue--Text-And-CTA-Background);
+}
+
+#card-top, #card-bottom {
+    padding: 2rem;
+}
+
+#card-top {
+    display: grid;
+    grid-template-areas: 
+    'page-views'
+    'slider'
+    'numbers-per-month'
+    'billing-type--container';
+}
+
+.page-views {
+    grid-area: page-views;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+}
+
+.numbers-per-month {
+    grid-area: numbers-per-month;
+}
+
+#number {
+    color: var(--clr-Dark-Desaturated-Blue--Text-And-CTA-Background);
+    font-size: 2rem;
+}
+
+#billing-type--container {
+    grid-area: billing-type--container;
+    position: relative;
+}
+
+#discount {
+    background-color: var(--clr-Light--Grayish-Red-Discount-Background);
+    color: var(--clr-Light-Red-Discount-Text);
+    font-size: .6rem;
+    line-height: 1rem;
+    padding: .05em .5em;
+    position: absolute;
+    top: 0%;
+    left: 85%;
+    border-radius: 1rem;
+}
+
+hr {}
+
+.benefits-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.benefits-list li {
+    list-style: none;
+    background-image: url(/images/icon-check.svg);
+    background-repeat: no-repeat;
+    line-height: .7em;
+    padding-left: 1.5rem;
+}
+
+button {
+    background-color: var(--clr-Dark-Desaturated-Blue--Text-And-CTA-Background);
+    color: var(--clr-Pale-Blue--CTA-Text);
+    font-weight: var(--fw-one);
+    letter-spacing: .04em;
+    margin: 1rem;
+    padding: .8em 3em;
+    border: none;
+    border-radius: 10rem;
 }
 
 .attribution { font-size: 11px; text-align: center; }
