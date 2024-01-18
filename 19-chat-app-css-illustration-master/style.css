@@ -1,4 +1,33 @@
+:root {
+    --clr--pale-violet--sub-heading-at-the-top-of-the-app-UI: hsl(276, 100%, 81%);
+    --clr--moderate-violet--chat-on-the-left: hsl(276, 55%, 52%);
+    --clr--desaturated-dark-violet--chat-on-the-right: hsl(271, 15%, 43%);
+    --clr--grayish-blue--placeholder-text: hsl(206, 6%, 79%);
+    --clr--veryDark-desaturated-violet--main-heading: hsl(271, 36%, 24%);
+    --clr--dark-grayish-violet--paragraph: hsl(270, 7%, 64%);
+    --clr--light-magenta: hsl(293, 100%, 63%);
+    --clr--light-violet: hsl(264, 100%, 61%);
+    --clr--white: hsl(0, 0%, 100%);
+    --clr--light-grayish-violet-app-background: hsl(270, 20%, 96%);
+    --clr--veryDark-desaturated-violet--submit-button-background: hsl(271, 36%, 24%);
+    --clr--veryLight-magenta--radio-button-outline: hsl(289, 100%, 72%);
+    --fw--one: 400;
+    --fw--two: 500;
+    --fw--three: 700;
+}
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--clr--light-grayish-violet-app-background);
+    font-family: 'Rubik', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    position: relative;
+}
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
