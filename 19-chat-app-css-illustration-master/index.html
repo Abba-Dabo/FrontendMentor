@@ -8,21 +8,23 @@
   <title>Frontend Mentor | Chat App llustration</title>    
 </head>
 <body>
-<div class="outer-container">
-  <div class="container">
-    <span class="bg-shape"></span>
+  <div class="outer-container">
+    <div class="bg-shape"></div>
+    <div class="container">
     <div class="phone">
       <div class="app-top">
-        <span class="phone-shape"></span>
-        <span class="person-info">
-          <span class="insert-phone-symbol">..</span>
-          <img src="/images/avatar.jpg" alt="pic of person chatting">
-          <span class="person-name-and-status">
-            <h2 class="person-name">Samuel Green</h2>
-            <p class="person-status">Available to Walk</p>
-          </span>
-          <span class="insert-three-vertical-dots">..</span>
-        </span>
+        <div class="phone-shape"></div>
+        <div class="person-info--container">
+          <div class="insert-phone-symbol">..</div>
+          <div class="person-image-name-and-status">
+            <img src="/images/avatar.jpg" alt="pic of person chatting">
+            <div class="person-name-and-status">
+              <h2 class="person-name">Samuel Green</h2>
+              <p class="person-status">Available to Walk</p>
+            </div>
+          </div>
+          <div class="insert-three-vertical-dots">..</div>
+        </div>
       </div>
       <div class="chat-container">
         <p class="chat grey-bg chat-from">
@@ -31,31 +33,37 @@
         <p class="chat grey-bg chat-from">
           Could you send over some pictures of your dog, please?
         </p>
-        <div class="images-container">
+        <div class="images-container chat-to">
           <img src="/images/dog-image-1.jpg" alt="dog looking at the sky">
           <img src="/images/dog-image-2.jpg" alt="dog sitting on dry leaves">
           <img src="/images/dog-image-3.jpg" alt="dog holding a stick with his mouth">
         </div>
-        <p class="chat white-bg">
+        <p class="chat white-bg chat-to">
           Here are a few pictures. She’s a happy girl!
         </p>
-        <p class="chat white-bg">
+        <p class="chat white-bg chat-to">
           Can you make it?
         </p>
         <p class="chat grey-bg chat-from">
           She looks so happy! The time we discussed works. How long shall I take her out for?
         </p>
-        <span class="walk-price chat-from">
-          <input type="radio" name="minutes" id="30-minutes"><p>30 minute walk</p><h1>$29</h1>
-        </span>
-        <span class="walk-price chat-from">
-          <input type="radio" name="minutes" id="1-hour"><p>1 hour walk</p> <h1>$49</h1>
-        </span>
+        <div class="walk-price chat-from">
+          <div class="select-distance">
+            <input type="radio" name="minutes" id="30-minutes"><p>30 minute walk</p>
+          </div>
+          <h1>$29</h1>
+        </div>
+        <div class="walk-price chat-from">
+          <div class="select-distance">
+            <input type="radio" name="minutes" id="1-hour"><p>1 hour walk</p>
+          </div>
+          <h1>$49</h1>
+        </div>
+        <div class="type-here">
+          <p>Type a message…</p>
+          <div class="insert-go-arrow">..</div>
+        </div>
       </div>
-    <div class="type-here">
-      <p>Type a message…</p>
-      <span class="insert-go-arrow">..</span>
-    </div>
     </div>    
     <div class="body-info">
       <h1 class="heading">Simple booking</h1>    
