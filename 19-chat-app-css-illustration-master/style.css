@@ -177,7 +177,7 @@ img {
 
 .walk-price {
     background: linear-gradient(to left,  var(--clr--light-violet), var(--clr--light-magenta));
-    color: var(--clr--white);
+    color: var(--clr--light-grayish-violet-app-background);
     width: 75%;
     display: flex;
     flex-direction: row;
@@ -192,6 +192,7 @@ img {
 }
 
 .walk-price h1 {
+    color: var(--clr--white);
     font-size: .6rem;
     padding-right: 1em;
 }
