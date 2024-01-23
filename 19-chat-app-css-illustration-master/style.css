@@ -27,6 +27,7 @@ body {
     font-family: 'Rubik', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 16px;
     position: relative;
+    overflow: hidden;
 }
 
 .outer-container {
@@ -58,6 +59,17 @@ body {
     z-index: -1;
     border-radius: 50rem;
 }
+
+.bg-shape--low-opacity {
+    display: none;
+    background: linear-gradient(to bottom, var(--clr--light-magenta), var(--clr--light-violet));
+    width: 20rem;
+    height: 80vh;
+    position: absolute;
+    z-index: -1;
+    border-radius: 50rem;
+}
+
 /* 
 img {
     width: 100%;
@@ -257,6 +269,25 @@ img {
     font-size: .8rem;
     line-height: 1.5em;
     padding-top: 1rem;
+}
+
+@media screen and (min-width: 376px) {
+
+    .outer-container {
+        width: 900px;
+        padding:  0 1.5rem;
+    }
+    
+    .container {
+        max-height: 85vh;
+        grid-template-columns: calc(375px - 3rem) 3fr;
+        grid-template-rows: 6fr 3fr;
+        grid-template-areas: 
+            'phone body-info';
+        gap: 3rem;
+        margin-top: 5rem;
+    }
+    
 }
 
 .attribution { font-size: 11px; text-align: center; }
