@@ -287,7 +287,7 @@ img {
         gap: 3rem;
         margin-top: 5rem;
     }
-    
+
     .bg-shape {
         width: 35rem;
         height: 130vh;
@@ -309,6 +309,16 @@ img {
         border-radius: 50rem;
         rotate: 180deg;
         opacity: .05;
+    }
+
+    .body-info {
+        grid-area: body-info;
+        text-align: left;
+        padding:  10rem 0;
+    }
+    
+    .body-info p {
+        padding-right: 7rem;
     }
     
 }
