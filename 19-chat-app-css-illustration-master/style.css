@@ -288,6 +288,29 @@ img {
         margin-top: 5rem;
     }
     
+    .bg-shape {
+        width: 35rem;
+        height: 130vh;
+        top: -22rem;
+        left: -28rem;
+        z-index: -1;
+        border-radius: 50rem;
+    }
+
+    .bg-shape--low-opacity {
+        display: inline-block;
+        background: linear-gradient(to bottom, var(--clr--light-magenta), var(--clr--light-violet));
+        width: 35rem;
+        height: 130vh;
+        position: absolute;
+        top: 1rem;
+        right: -30rem;
+        z-index: -1;
+        border-radius: 50rem;
+        rotate: 180deg;
+        opacity: .05;
+    }
+    
 }
 
 .attribution { font-size: 11px; text-align: center; }
