@@ -1,44 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Tip calculator app</title>
+  </head>
+  <body>
+    <div class="outer-container">
+      <h1 class="app-name">SPLITTER</h1>
+      <div class="container">
+        <h3 class="main-heading">Bill</h3>
+        <input type="number" name="" id="" placeholder="$" />
+        <p class="tip-percent__heading">Select Tip %</p>
+        <div class="tip-percent__items">
+          <button type="submit" class="tip-percent__item 5-percent__item">
+            5%
+          </button>
+          <button type="submit" class="tip-percent__item 10-percent__item">
+            10%
+          </button>
+          <button type="submit" class="tip-percent__item 15-percent__item">
+            15%
+          </button>
+          <button type="submit" class="tip-percent__item 25-percent__item">
+            25%
+          </button>
+          <button type="submit" class="tip-percent__item 50-percent__item">
+            50%
+          </button>
+          <input
+            type="text"
+            name=""
+            id=""
+            placeholder="Custom"
+            class="tip-percent__item custom-percent__item"
+          />
+        </div>
+        <div class="input-number-of-people">
+          <div class="heading-and-error-report">
+            <p>Number of People</p>
+            <div id="error-report">can't be zero</div>
+          </div>
+          <input type="number" name="" id="" />
+        </div>
+        <div id="second-container">
+          <div class="second-container__top">
+            <p class="tip-person-top">Tip Amount</p>
+            <p class="tip-person-bottom">/ person</p>
+          </div>
+          <div class="second-container__bottom">
+            <p class="total-person-top">Total</p>
+            <p class="total-person-bottom">/ person</p>
+          </div>
+          <button type="reset">Reset</button>
+        </div>
+      </div>
+    </div>
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Tip calculator app</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-
-  Bill
-
-  Select Tip %
-  5%
-  10%
-  15%
-  25%
-  50%
-  Custom
-
-  Number of People
-
-  Tip Amount
-  / person
-
-  Total
-  / person
-
-  Reset
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </body>
 </html>
