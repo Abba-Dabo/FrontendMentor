@@ -15,50 +15,62 @@
   </head>
   <body>
     <div class="outer-container">
-      <h1 class="app-name">SPLITTER</h1>
+      <h1 id="app-name">SPLITTER</h1>
       <div class="container">
-        <h3 class="main-heading">Bill</h3>
-        <input type="number" name="" id="" placeholder="$" />
-        <p class="tip-percent__heading">Select Tip %</p>
-        <div class="tip-percent__items">
-          <button type="submit" class="tip-percent__item 5-percent__item">
-            5%
-          </button>
-          <button type="submit" class="tip-percent__item 10-percent__item">
-            10%
-          </button>
-          <button type="submit" class="tip-percent__item 15-percent__item">
-            15%
-          </button>
-          <button type="submit" class="tip-percent__item 25-percent__item">
-            25%
-          </button>
-          <button type="submit" class="tip-percent__item 50-percent__item">
-            50%
-          </button>
-          <input
-            type="text"
-            name=""
-            id=""
-            placeholder="Custom"
-            class="tip-percent__item custom-percent__item"
-          />
-        </div>
-        <div class="input-number-of-people">
-          <div class="heading-and-error-report">
-            <p>Number of People</p>
-            <div id="error-report">can't be zero</div>
+        <div class="first-container">
+          <h3 class="main-heading">Bill</h3>
+          <input type="text" placeholder="$" />
+          <h3 class="tip-percent__heading">Select Tip %</h3>
+          <div class="tip-percent__items">
+            <button type="submit" class="tip-percent__item five-percent__item">
+              5%
+            </button>
+            <button type="submit" class="tip-percent__item ten-percent__item">
+              10%
+            </button>
+            <button
+              type="submit"
+              class="tip-percent__item fifteen-percent__item"
+            >
+              15%
+            </button>
+            <button
+              type="submit"
+              class="tip-percent__item twenty-five-percent__item"
+            >
+              25%
+            </button>
+            <button type="submit" class="tip-percent__item fifty-percent__item">
+              50%
+            </button>
+            <input
+              type="text"
+              placeholder="Custom"
+              class="tip-percent__item custom-percent__item"
+            />
           </div>
-          <input type="number" name="" id="" />
+          <div class="input-number-of-people">
+            <div class="heading-and-error-report">
+              <h3>Number of People</h3>
+              <h3 id="error-report">can't be zero</h3>
+            </div>
+            <input type="text" name="" id="" />
+          </div>
         </div>
         <div id="second-container">
           <div class="second-container__top">
-            <p class="tip-person-top">Tip Amount</p>
-            <p class="tip-person-bottom">/ person</p>
+            <div class="tip-per-person">
+              <h3 class="tip-person__top">Tip Amount</h3>
+              <p class="tip-person__bottom">/ person</p>
+            </div>
+            <h1 class="tip-person__number">$</h1>
           </div>
           <div class="second-container__bottom">
-            <p class="total-person-top">Total</p>
-            <p class="total-person-bottom">/ person</p>
+            <div class="total-per-person">
+              <h3 class="total-person__top">Total</h3>
+              <p class="total-person__bottom">/ person</p>
+            </div>
+            <h1 class="total-person__number">$</h1>
           </div>
           <button type="reset">Reset</button>
         </div>
