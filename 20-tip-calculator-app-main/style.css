@@ -5,6 +5,7 @@
     --clr--grayish-cyan: hsl(184, 14%, 56%);
     --clr--light-grayish-cyan: hsl(185, 41%, 84%);
     --clr--veryLight-grayish-cyan: hsl(189, 41%, 97%);
+    --clr--desktop-empty--reset-button: hsl(183, 79%, 24%);
     --clr--white: hsl(0, 0%, 100%);
 }
 
@@ -40,8 +41,9 @@ body {
     font-size: 1.2rem;
     font-weight: 700;
     text-align: center;
+    letter-spacing: .5rem;
     margin: 2rem auto;
-    padding: 0 10rem;
+    padding: 0 9rem;
     word-wrap: break-word;
 }
 
@@ -76,6 +78,7 @@ body {
 }
 
 .tip-percent__items .selected-tip-percent {
+    display: block;
     background-color: var(--clr--strong-cyan);
     color: var(--clr--veryDark-cyan);
 }
@@ -157,6 +160,7 @@ input {
 .second-container button {
     background-color: var(--clr--strong-cyan);
     color: var(--clr--veryDark-cyan);
+    justify-self: end;
     width: 100%;
     font-size: .9rem;
     font-weight: 700;
@@ -168,13 +172,42 @@ input {
 
 @media screen and (min-width: 376px) {
     .outer-container {
-        width: 750px;
+        width: 700px;
     }
     
     .container {
         flex-direction: row;
     }
-   
+        
+    #app-name {
+        margin-top: 10vh;
+        margin-bottom: 7vh;
+        padding: 0 19rem;
+    }
+        
+    .tip-percent__items {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: .7rem;
+        margin-top: .5rem; 
+        margin-bottom: 1.8rem;
+    }
+        
+    .tip-percent__items .selected-tip-percent {
+        background-color: var(--clr--strong-cyan);
+        color: var(--clr--veryDark-cyan);
+    }
+
+    .tip-percent__items input::placeholder {
+        text-align: center;
+    }
+        
+    .second-container button {
+        background-color: var(--clr--desktop-empty--reset-button);
+        color: var(--clr--veryDark-cyan);
+        margin-top: 5rem;
+    }
+
 }
 
 .attribution { font-size: 11px; text-align: center; }
