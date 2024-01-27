@@ -209,11 +209,19 @@ img {
     padding-right: 1em;
 }
 
-.walk-price input {
+.walk-price input[type=radio] {
     width: .5rem;
     outline: var(--clr--veryLight-magenta--radio-button-outline);
+    appearance: none;
+    padding: 3px;
+    /* background-color: yellow; */
+    border-radius:50%;
     border: 1px solid var(--clr--veryLight-magenta--radio-button-outline);
 }
+
+.walk-price input[type=radio]:checked {
+    background-color: var(--clr--light-grayish-violet-app-background);
+ }
 
 .select-distance--cta {
     display: flex;
@@ -263,6 +271,7 @@ img {
     font-size: 1.8rem;
     font-weight: var(--fw--two);
 }
+@media screen and (min-width: 376px) {
 
 .body-info p {
     color: var(--clr--dark-grayish-violet--paragraph);
@@ -271,7 +280,6 @@ img {
     padding-top: 1rem;
 }
 
-@media screen and (min-width: 376px) {
 
     .outer-container {
         width: 900px;
