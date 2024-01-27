@@ -58,6 +58,10 @@ body {
     margin-bottom: 1.5rem;
 }
 
+.first-container > input:focus{
+    outline: 2px solid var(--clr--strong-cyan);
+}
+
 .tip-percent__items {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -87,6 +91,11 @@ body {
     text-align: end;
 }
 
+.first-container > input:hover, .tip-percent__items input:hover {
+    outline: 2px solid var(--clr--strong-cyan);
+    cursor: pointer;
+}
+
 .heading-and-error-report {
     display: flex;
     justify-content: space-between;
@@ -96,7 +105,7 @@ body {
 
 .heading-and-error-report #error-report {
     display: none;
-    color: red;
+    color: orangered;
     font-size: .7rem;
 }
 
@@ -115,6 +124,10 @@ input {
     padding: .5rem .7rem;
     border-radius: .2rem;
     border: none;
+}
+
+.input-error-report {
+    outline: 2px solid orangered;
 }
 
 .second-container {
@@ -193,9 +206,15 @@ input {
         margin-bottom: 1.8rem;
     }
         
-    .tip-percent__items .selected-tip-percent {
+    /* .tip-percent__items .selected-tip-percent {
         background-color: var(--clr--strong-cyan);
         color: var(--clr--veryDark-cyan);
+    } */
+
+    .tip-percent__items button:hover {
+        background-color: var(--clr--light-grayish-cyan);
+        color: var(--clr--veryDark-cyan);
+        cursor: pointer;
     }
 
     .tip-percent__items input::placeholder {
@@ -207,6 +226,13 @@ input {
         color: var(--clr--veryDark-cyan);
         margin-top: 5rem;
     }
+
+    .second-container button:hover {
+        background-color: var(--clr--light-grayish-cyan);
+        color: var(--clr--veryDark-cyan);
+        cursor: pointer;
+    }
+    
 
 }
 
