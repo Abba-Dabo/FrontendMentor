@@ -23,7 +23,7 @@ body {
 
 .outer-container {
     width: 375px;
-    height: 100vh;
+    /* height: 100vh; */
     margin: 0 auto;
 }
 
@@ -75,7 +75,7 @@ body {
     border: none;
 }
 
-.tip-percent__items .fifteen-percent__item {
+.tip-percent__items .selected-tip-percent {
     background-color: var(--clr--strong-cyan);
     color: var(--clr--veryDark-cyan);
 }
@@ -164,6 +164,7 @@ input {
     border: none;
     border-radius: .2rem;
 }
+
 
 
 .attribution { font-size: 11px; text-align: center; }
