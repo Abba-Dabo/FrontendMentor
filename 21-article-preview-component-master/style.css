@@ -1,3 +1,25 @@
+:root {
+  --clr--veryDark-Grayish-Blue: hsl(217, 19%, 35%);
+  --clr--desaturatedDark-Blue: hsl(214, 17%, 51%);
+  --clr--Grayish-Blue: hsl(212, 23%, 69%);
+  --clr--Light-Grayish-Blue: hsl(210, 46%, 95%);
+  --fw--one: 500;
+  --fw--two: 700;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--clr--Light-Grayish-Blue);
+  color: var(--clr--veryDark-Grayish-Blue);
+  font-family: 'Manrope', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 13px;
+}
+
 .attribution {
     font-size: 11px;
     text-align: center;
