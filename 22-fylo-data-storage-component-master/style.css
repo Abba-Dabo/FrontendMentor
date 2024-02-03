@@ -1,2 +1,25 @@
+:root {
+    --clr--gradient: linear-gradient(to left, hsl(6, 100%, 80%),hsl(335, 100%, 65%));
+    --clr--pale-blue: hsl(243, 100%, 93%);
+    --clr--grayish-blue: hsl(229, 7%, 55%);
+    --clr--dark-blue: hsl(228, 56%, 26%);
+    --clr--veryDark-blue: hsl(229, 57%, 11%);
+    --fw--one: 400;
+    --fw--two: 700;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Raleway', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+}
+
+
+
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
