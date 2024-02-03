@@ -19,7 +19,23 @@ body {
     font-size: 14px;
 }
 
+.outer-container {
+    background: url(/images/bg-mobile.png) center/cover no-repeat;
+    width: 375px;
+    height: 100vh;
+    margin: auto;
+}
 
+.container {
+    width: 85%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin: auto;
+}
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
