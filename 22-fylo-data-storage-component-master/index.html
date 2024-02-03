@@ -19,15 +19,28 @@
         <div id="logo-icons-container">
           <img src="/images/logo.svg" alt="the logo image" />
           <div class="icons-container">
-            <img src="/images/icon-document.svg" alt="a document icon" />
-            <img src="/images/icon-folder.svg" alt="a folder icon" />
-            <img src="/images/icon-upload.svg" alt="an upload icon" />
+            <span id="icon-document"></span>
+            <span id="icon-folder"></span>
+            <span id="icon-upload"></span>
           </div>
         </div>
-        <p id="storage-para">
-          You’ve used 815 GB of your storage 185 GB Left <p>0 GB</p> <p>1000 GB</p>
-        </p>
-        <p id="storage-left"><span class="storage-left">185</span> GB LEFT</p>
+
+        <div id="storoge-container">
+          <p id="storage-para">
+            You’ve used <span id="storage-used-number">815 GB</span> of your
+            storage
+          </p>
+          <div id="slider"></div>
+          <div class="slider-label">
+            <p>0 GB</p>
+            <p>1000 GB</p>
+          </div>
+        </div>
+
+        <div id="storage-left">
+          <span id="storage-left-number">185</span>
+          <p>GB Left</p>
+        </div>
       </div>
     </div>
 
