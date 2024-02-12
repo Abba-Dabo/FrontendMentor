@@ -20,28 +20,28 @@
         <div class="sidebar">
           <div class="steps-container">
             <div class="step-one">
-              <div class="step-number" id="number-one"></div>
+              <div class="step-number" id="number-one"><p>1</p></div>
               <div class="step-info">
                 <p class="steps-heading">Step 1</p>
                 <p class="steps-sub-heading">Your info Step</p>
               </div>
             </div>
             <div class="step-two">
-              <div class="step-number" id="number-two"></div>
+              <div class="step-number present-step" id="number-two">2</div>
               <div class="step-info">
                 <p class="steps-heading">Step 2</p>
                 <p class="steps-sub-heading">Select plan</p>
               </div>
             </div>
             <div class="step-three">
-              <div class="step-number" id="number-three"></div>
+              <div class="step-number" id="number-three">3</div>
               <div class="step-info">
                 <p class="steps-heading">Step 3</p>
                 <p class="steps-sub-heading">Add-ons</p>
               </div>
             </div>
             <div class="step-four">
-              <div class="step-number" id="number-four"></div>
+              <div class="step-number" id="number-four">4</div>
               <div class="step-info">
                 <p class="steps-heading">Step 4</p>
                 <p class="steps-sub-heading">Summary</p>
@@ -52,7 +52,7 @@
         <!-- Sidebar end -->
 
         <!-- Step 1 start -->
-        <div class="card card-step-one">
+        <!-- <div class="card card-step-one">
           <h1 class="card-heading">Personal info</h1>
           <p class="card-sub-heading">
             Please provide your name, email address, and phone number.
@@ -85,7 +85,7 @@
             />
           </div>
         </div>
-        <div class="footer"><p>Next Step</p></div>
+        <div class="footer" id="card-step-one__footer"><p class="next-button" >Next Step</p></div> -->
 
         <!-- Step 1 end -->
 
@@ -95,7 +95,7 @@
           <p class="card-sub-heading">
             You have the option of monthly or yearly billing.
           </p>
-          <button type="submit">
+          <button type="submit" id="selected-plan">
             <img
               src="/assets/images/icon-arcade.svg"
               alt="icon for arcade plan"
@@ -126,23 +126,24 @@
             </div>
           </button>
           <div id="billing-type--container">
-            <p class="billing-type">Monthly</p>
+            <p id="billing-type--monthly">Monthly</p>
+
             <!-- toggle switch -->
             <label for="" class="switch">
               <input type="checkbox" name="" id="" checked />
               <span class="slider round"></span>
             </label>
-            <p class="billing-type">Yearly</p>
+            <p id="billing-type--yearly" class="seleted-duration">Yearly</p>
           </div>
         </div>
         <div class="footer">
-          <p>Go Back</p>
-          <p>Next Step</p>
+          <p class="back-button">Go Back</p>
+          <p class="next-button">Next Step</p>
         </div>
         <!-- Step 2 end -->
 
         <!-- Step 3 start -->
-        <div class="card card-step-three">
+        <!-- <div class="card card-step-three">
           <h1 class="card-heading">Pick add-ons Add-ons</h1>
           <p class="card-sub-heading">help enhance your gaming experience.</p>
           <div class="add-ons-container">
@@ -191,19 +192,19 @@
           </div>
         </div>
         <div class="footer">
-          <p>Go Back</p>
-          <p>Next Step</p>
-        </div>
+          <p class="back-button">Go Back</p>
+          <p class="next-button">Next Step</p>
+        </div> -->
         <!-- Step 3 end -->
 
         <!-- Step 4 start -->
-        <div class="card card-step-four">
+        <!-- <div class="card card-step-four">
           <h1 class="card-heading">Finishing up</h1>
           <p class="card-sub-heading">
             Double-check everything looks OK before confirming.
-          </p>
-          <!-- Dynamically add subscription and add-on selections here -->
-          <div id="selected-sub-and-add-ons">
+          </p> -->
+        <!-- Dynamically add subscription and add-on selections here -->
+        <!-- <div id="selected-sub-and-add-ons">
             <div id="selected-sub">
               <div id="selected-sub-and-change-option">
                 <h2>Arcade (monthly)</h2>
@@ -226,13 +227,13 @@
           </div>
         </div>
         <div class="footer">
-          <p>Go Back</p>
-          <p>Confirm</p>
-        </div>
+          <p class="back-button">Go Back</p>
+          <p class="next-button" >Confirm</p>
+        </div> -->
         <!-- Step 4 end -->
 
         <!-- Step 5 start -->
-        <div class="card card-thanks">
+        <!-- <div class="card card-thanks">
           <img
             src="/assets/images/icon-checkmark.svg"
             alt="icon of approval for thank you"
@@ -243,7 +244,7 @@
             our platform. If you ever need support, please feel free to email us
             at support@loremgaming.com.
           </p>
-        </div>
+        </div> -->
         <!-- Step 5 end -->
       </div>
     </div>
