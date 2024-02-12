@@ -26,6 +26,125 @@ body {
   font-size: 15px;
 }
 
+.outer-container {
+  width: 375px;
+  height: 100svh;
+  margin: auto;
+}
+
+.container {
+  width: inherit;
+  height: inherit;
+  position: relative;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 2fr 6fr 1fr;
+}
+
+.sidebar {
+  background: url(/assets/images/bg-sidebar-mobile.svg);
+  color: var(--clr--alabaster);
+  grid-row: 1 / 2;
+  grid-column: 1 / 2;
+}
+
+.steps-container {
+  padding: 1.8rem 5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.step-number {
+  color: var(--clr--alabaster);
+  font-size: .8rem;
+  font-weight: var(--fw--two);
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: 1px solid var(--clr--alabaster);
+  border-radius: 10rem;
+}
+
+.step-info {
+  display: none;
+}
+
+#number-one {
+  background-color: var(--clr--light-blue);
+  color: var(--clr--marine-blue);
+  border: none;
+}
+
+.card {
+  background-color: var(--clr--white);
+  position: absolute;
+  top: 12svh;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 0 1.5rem;
+  padding: 1.5rem;
+  border-radius: .5rem;
+  box-shadow: 1px 10px 40px -30px var(--clr--cool-gray);
+}
+
+.card-heading {
+  color: var(--clr--marine-blue);
+  font-size: 1.5rem;
+  line-height: 1rem;
+  margin-top: 1rem;
+}
+
+.card-sub-heading {
+  color: var(--clr--cool-gray);
+  line-height: 1.2rem;
+  margin-right: 2rem;
+}
+
+.input-container label {
+  color: var(--clr--marine-blue);
+  font-size: .8rem;
+  font-weight: var(--fw--two);
+  display: block;
+  line-height: 1.2rem;
+}
+
+.input-container input::placeholder {
+  color: var(--clr--cool-gray);
+  font-family: 'Ubuntu';
+  font-weight: var(--fw--two);
+}
+
+.input-container input {
+  width: 100%;
+  border: 1px solid var(--clr--cool-gray);
+  padding: .7rem 1rem;
+  border-radius: .3rem;
+}
+
+.footer {
+  background-color: var(--clr--alabaster);
+  grid-column: 1 / 2;
+  grid-row: 3 / 4;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.footer p {
+  background-color: var(--clr--marine-blue);
+  color: var(--clr--alabaster);
+  margin-right: 1rem;
+  padding: .4rem .8rem;
+  border-radius: .2rem;
+}
+
 .attribution {
     font-size: 11px;
     text-align: center;
