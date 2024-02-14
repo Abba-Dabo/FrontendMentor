@@ -76,7 +76,7 @@ body {
   display: none;
 }
 
-.present-step {
+#number-one {
   background-color: var(--clr--light-blue);
   color: var(--clr--marine-blue);
   border: none;
@@ -98,12 +98,12 @@ body {
 .card-heading {
   color: var(--clr--marine-blue);
   font-size: 1.5rem;
-  font-weight: var(--fw--two);
   line-height: 1rem;
   margin-top: 1rem;
 }
 
 .card-sub-heading {
+  color: var(--clr--cool-gray);
   line-height: 1.2rem;
   margin-right: 2rem;
 }
@@ -118,7 +118,7 @@ body {
 
 .input-container input::placeholder {
   color: var(--clr--cool-gray);
-  font-family: var(--ff--one);
+  font-family: 'Ubuntu';
   font-weight: var(--fw--two);
 }
 
@@ -129,147 +129,17 @@ body {
   border-radius: .3rem;
 }
 
-.card-step-two button {
-  background-color: transparent;
-  font-family: var(--ff--one);
-  display: flex;
-  flex-direction: row;
-  justify-content: start;
-  align-items: flex-start;
-  border: 1px solid var(--clr--light-gray);
-  border-radius: .5rem;
-}
-
-.card-step-two #selected-plan {
-  background-color: var(--clr--alabaster);
-  border: 1px solid var(--clr--purplish-blue);
-}
-
-.card-step-two img {
-  width: 2rem;
-  margin: 1rem;
-}
-
-.card-step-two .plan-and-price {
-  text-align: left;
-  margin: 1rem 0;
-}
-
-.card-step-two .plan-and-price h2 {
-  color: var(--clr--marine-blue);
-  font-size: 1rem;
-  font-weight: var(--fw--two);
-}
-
-.card-step-two .plan-and-price p {
-  color: var(--clr--cool-gray);
-  font-size: .8rem;
-  line-height: 1.2rem;
-}
-
-.card-step-two button .plan-and-price .free-months-on-yearly-sub {
-  color: var(--clr--marine-blue);
-  font-size: .6rem;
-  font-weight: var(--fw--two);
-  display: block;
-}
-
-#billing-type--container {
-  background-color: var(--clr--alabaster);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: .8rem;
-  position: relative;
-  margin-top: .5rem;
-  padding: .50em 4em;
-  border-radius: .3rem;
-}
-
-#billing-type--container p {
-  color: var(--clr--marine-blue);
-}
-
-#billing-type--container .seleted-duration {
-  color: var(--clr--cool-gray);
-}
-
-/* toggle switch */
-#billing-type--container .switch {
-  position: relative;
-  display: inline-block;
-  width: 40px;
-  height: 22px;
-}
-
-#billing-type--container .switch input {
-  opacity: 0;
-  width: 0;
-  height: 0;
-}
-
-#billing-type--container .slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: var(--clr--marine-blue);
-  transform : .4s;
-  transition: .4s;
-}
-
-#billing-type--container .slider::before {
-  position: absolute;
-  content: "";
-  height: 14px;
-  width: 14px;
-  left: 4px;
-  bottom: 4px;
-  background-color: var(--clr--white);
-  transform: .4s;
-  transition: .4s;
-}
-
-#billing-type--container input:checked + .slider {
-  background-color: var(--clr--marine-blue);
-}
-
-#billing-type--container input:focus + .slider {
-  box-shadow: 0 0 1px var(--clr--cool-gray);
-}
-
-#billing-type--container input:checked + .slider::before {
-  -webkit-transform: translateX(18px);
-  -ms-transform: translateX(18px);
-  transform: translateX(18px);
-}
-
-#billing-type--container .slider.round {
-  border-radius: 20px;
-}
-
-#billing-type--container .slider.round::before {
-  border-radius: 50%;
-}
-
-
 .footer {
   background-color: var(--clr--alabaster);
   grid-column: 1 / 2;
   grid-row: 3 / 4;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
 }
 
-.footer .back-button {
-  margin-left: 1rem;
-}
-
-.footer .next-button {
+.footer p {
   background-color: var(--clr--marine-blue);
   color: var(--clr--alabaster);
   margin-right: 1rem;
