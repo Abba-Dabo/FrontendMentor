@@ -98,7 +98,7 @@ body {
 .card-heading {
   color: var(--clr--marine-blue);
   font-size: 1.5rem;
-  font-weight: var(--fw--two);
+  font-weight: var(--fw--three);
   line-height: 1rem;
   margin-top: 1rem;
 }
@@ -129,7 +129,7 @@ body {
   border-radius: .3rem;
 }
 
-.card-step-two button {
+.card-step-two button, .card-step-three button {
   background-color: transparent;
   font-family: var(--ff--one);
   display: flex;
@@ -140,7 +140,7 @@ body {
   border-radius: .5rem;
 }
 
-.card-step-two #selected-plan {
+.card-step-two #selected-plan, .card-step-three .selected-add-on {
   background-color: var(--clr--alabaster);
   border: 1px solid var(--clr--purplish-blue);
 }
@@ -254,6 +254,49 @@ body {
   border-radius: 50%;
 }
 
+.card-step-three .add-on {
+  /* display: flex;
+  flex-direction: row; */
+  justify-content: space-between;
+  align-items: center;
+  padding: .7rem;
+}
+
+.card-step-three .add-on .checkbox-and-name{
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: .7rem;
+}
+
+.card-step-three .add-on .checkbox-and-name input[type=checkbox] {
+  width: 1rem;
+  height: 1rem;
+  appearance: none;
+  border-radius:20%;
+  border: 1px solid var(--clr--light-gray);
+}
+
+.card-step-three .add-on .checkbox-and-name input[type=checkbox]:checked {
+  background: url(/assets/images/icon-checkmark.svg) var(--clr--purplish-blue) no-repeat center;
+}
+
+.card-step-three .add-on .add-on-name-container h2{
+  color: var(--clr--marine-blue);
+  font-size: 1rem;
+  font-weight: var(--fw--two);
+  text-align: left;
+}
+
+.card-step-three .add-on .add-on-name-container p{
+  font-size: .8rem;
+}
+
+.card-step-three .add-on .add-on-price {
+  color: var(--clr--purplish-blue);
+  font-size: .8rem;
+  font-weight: var(--fw--one);
+}
 
 .footer {
   background-color: var(--clr--alabaster);
