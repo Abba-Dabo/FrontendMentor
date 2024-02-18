@@ -350,6 +350,21 @@ body {
   background-color: var(--clr--purplish-blue);
 }
 
+.card-thanks {
+  padding: 5rem 1.5rem;
+  align-items: center;
+  text-align: center;
+}
+
+.card-thanks .card-sub-heading{
+  line-height: 1.4rem;
+  margin: 0;
+}
+
+.card-thanks img {
+  width: 3rem;
+}
+
 .footer {
   background-color: var(--clr--alabaster);
   grid-column: 1 / 2;
