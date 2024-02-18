@@ -298,6 +298,58 @@ body {
   font-weight: var(--fw--one);
 }
 
+.card-step-four #selected-sub-and-add-ons #selected-sub,
+.card-step-four #selected-sub-and-add-ons .add-on-container, .card-step-four .total-per-sub-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#selected-sub-and-add-ons {
+  background-color: var(--clr--alabaster);
+  padding: .8rem;
+  border-radius: .5rem;
+}
+
+.card-step-four #selected-sub-and-add-ons #selected-sub h2{
+  color: var(--clr--marine-blue);
+  font-size: 1rem;
+  font-weight: var(--fw--three);
+}
+
+.card-step-four #selected-sub-and-add-ons #selected-sub {
+  padding-bottom: .8rem;
+  border-bottom: 1px solid var(--clr--light-gray);
+} 
+
+.card-step-four #selected-sub-and-add-ons #selected-sub #selected-sub-and-change-option a{
+  color: var(--clr--cool-gray);
+  font-size: .8rem;
+  font-weight: var(--fw--two);
+}
+
+.card-step-four #selected-sub-and-add-ons .add-on-container {
+  padding-top: .8rem;
+}
+
+.card-step-four #selected-sub-and-add-ons .add-on-container p:nth-of-type(2) {
+  color: var(--clr--marine-blue);
+}
+
+.card-step-four .total-per-sub-container {
+  padding: .8rem;
+}
+
+.card-step-four .total-per-sub-container p:nth-last-child(1) {
+  font-weight: var(--fw--three);
+  color: var(--clr--purplish-blue);
+}
+
+#confirm-button {
+  background-color: var(--clr--purplish-blue);
+}
+
 .footer {
   background-color: var(--clr--alabaster);
   grid-column: 1 / 2;
