@@ -23,7 +23,7 @@ body {
 .container {
     background-color: #fff;
     max-width: 375px;
-    margin: 2rem auto;
+    margin: 2rem 1.5rem;
     border-radius: 1rem;
     box-shadow: 0 1rem 4rem .5rem hsla(245, 75%, 52%, .1);
 }
@@ -45,15 +45,15 @@ body {
 
 }
 
-#subheading-para {
+.info #subheading-para {
     font-size: .9rem;
-    padding: 0 2.5rem;
+    padding: 0 1.3rem;
     color: var(--clr-blue--desaturated);
     font-weight: 500;
     line-height: 1.5rem;
 }
 
-.plan {
+.info .plan {
     background-color: var(--clr-blue--veryPale);
     display: flex;
     justify-content: space-between;
@@ -63,32 +63,32 @@ body {
     border-radius: .5rem;
 }
 
-.plan h3 {
+.info .plan h3 {
     color: var(--clr-blue--dark);
     font-size: .9rem;
     font-weight: 900;
     line-height: 1.5rem;
 }
 
-.plan p {
+.info .plan p {
     color: var(--clr-blue--desaturated);
     font-size:.9rem;
     font-weight: 500;
 }
 
-.plan a {
+.info .plan a {
     color: var(--clr-blue--bright);
     font-size: .8rem;
     font-weight: 900;
 }
 
-.image-and-annualBill {
+.info .image-and-annualBill {
     display: flex;
     justify-content: start;
     align-items: center;
 }
 
-.image-and-annualBill img {
+.info .image-and-annualBill img {
     margin-right: 1rem;
 }
 
