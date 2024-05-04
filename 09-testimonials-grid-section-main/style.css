@@ -22,7 +22,7 @@ body {
 
 .outer-container {
     max-width: 375px;
-    margin: 3rem auto;
+    margin: 3rem 0rem 0rem 0rem;
     padding: 1rem;
 }
 
@@ -127,13 +127,14 @@ body {
 @media screen and (min-width: 376px) {
     .outer-container {
         max-width: 1440px;
-        padding: 6rem;
+        margin: 0rem auto;
+        padding-top: 3rem;
     }   
 
     .container {
         display: grid;
         grid-template: repeat(2, auto) / repeat(4, 1fr);
-        gap: 1.5rem;
+        gap: 1rem;
     }
 
     .item-violet {
