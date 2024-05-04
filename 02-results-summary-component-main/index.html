@@ -1,64 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  <link rel="stylesheet" href="style.css">
-  <title>Frontend Mentor | Results summary component</title>
-</head>
-<body>
-<div class="container">
-  <div id="left">
-    <h2 id="left-title">Your Result</h2>
-    <div id="total-average">
-      <h1 >76</h1>
-      <p id="total-average--para">of 100</p>
-    </div>
-    
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Results summary component</title>
+  </head>
+  <body>
+    <div class="container">
+      <div id="left">
+        <h2 id="left-title">Your Result</h2>
+        <div id="total-average">
+          <h1>76</h1>
+          <p id="total-average--para">of 100</p>
+        </div>
 
-    <h1 id="remark-title">Great</h1>
-    <p id="left-para">You scored higher than 65% of the people who have taken these tests.</p>
-  </div>
-  <div id="right">
-    <h2 id="right-title">Summary</h2>
-
-    <div id="reaction" class="summary-item">
-      <div id="reaction-left" class="summary-item--left">
-        <img src="/assets/images/icon-reaction.svg" alt="">      <h3>Reaction</h3>
-      </div> 
-      <div id="reaction-right"><h3>80 <span class="item-right--d">/ 100</span></h3></div>
-    </div>
-    
-    <div id="memory" class="summary-item">
-      <div id="memory-left" class="summary-item--left">
-        <img src="/assets/images/icon-memory.svg" alt="">
-        <h3>Memory</h3>
-      </div> 
-      <div id="memory-right"><h3>92 <span class="item-right--d">/ 100</span></h3></div>
-    </div>
-
-    <div id="verbal" class="summary-item">
-      <div id="verbal-left" class="summary-item--left">
-        <img src="/assets/images/icon-verbal.svg" alt="">
-        <h3>Verbal</h3>
-      </div> 
-      <div id="verbal-right"><h3>61 <span class="item-right--d">/ 100</span></h3></div>
-    </div>
-
-    <div id="visual" class="summary-item">
-      <div id="visual-left" class="summary-item--left">
-        <img src="/assets/images/icon-visual.svg" alt="">
-        <h3>Visual</h3>
+        <h1 id="remark-title">Great</h1>
+        <p id="remark-para">
+          You scored higher than 65% of the people who have taken these tests.
+        </p>
       </div>
-      <div id="visual-right"><h3>72 <span class="item-right--d">/ 100</span></h3></div>
-    </div>
+      <div id="right">
+        <h2 id="right-title">Summary</h2>
 
-    <button >Continue </button> 
-  </div>
-</div>
-  <div class="attribution">Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+        <div id="reaction" class="summary-item">
+          <div id="reaction-left" class="summary-item--left">
+            <img src="/assets/images/icon-reaction.svg" alt="" />
+            <h3>Reaction</h3>
+          </div>
+          <div id="reaction-right">
+            <h3>80 <span class="item-right--d">/ 100</span></h3>
+          </div>
+        </div>
+
+        <div id="memory" class="summary-item">
+          <div id="memory-left" class="summary-item--left">
+            <img src="/assets/images/icon-memory.svg" alt="" />
+            <h3>Memory</h3>
+          </div>
+          <div id="memory-right">
+            <h3>92 <span class="item-right--d">/ 100</span></h3>
+          </div>
+        </div>
+
+        <div id="verbal" class="summary-item">
+          <div id="verbal-left" class="summary-item--left">
+            <img src="/assets/images/icon-verbal.svg" alt="" />
+            <h3>Verbal</h3>
+          </div>
+          <div id="verbal-right">
+            <h3>61 <span class="item-right--d">/ 100</span></h3>
+          </div>
+        </div>
+
+        <div id="visual" class="summary-item">
+          <div id="visual-left" class="summary-item--left">
+            <img src="/assets/images/icon-visual.svg" alt="" />
+            <h3>Visual</h3>
+          </div>
+          <div id="visual-right">
+            <h3>72 <span class="item-right--d">/ 100</span></h3>
+          </div>
+        </div>
+
+        <button>Continue</button>
+      </div>
+    </div>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </body>
 </html>
