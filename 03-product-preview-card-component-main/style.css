@@ -21,13 +21,14 @@ body {
     background-color: var(--color-five);
     font-family: var(--font-one);
     font-size: 14px;
-    margin: 0 auto;
+    padding: 1rem;
 }
 
 .container {
     max-width: 375px;
     background-color: var(--color-three);
-    margin: 1em auto;
+    margin: 0 auto;
+    margin-bottom: 1rem;
     border-radius: 10px;
 }
 
@@ -122,6 +123,10 @@ picture img {
 
 @media screen and (min-width: 376px) {
    
+    body {
+       padding: 3rem 0px 0px 0px;
+    }
+
     .container {
         max-width: 750px;
         display: flex;
