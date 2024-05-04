@@ -17,7 +17,7 @@
 body {
     background-color: var(--clr--veryLight-gray);
     font-family: var(--ff-one);
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 400;
 }
 
@@ -35,7 +35,7 @@ img {
     width: 2rem;
 }
 
-h2 {
+.containers h2 {
     color: var(--clr--veryLight-gray);
     font-family: var(--ff-two);
     font-size: 1.5rem;
@@ -43,13 +43,14 @@ h2 {
     margin: 1rem 0;
 }
 
-.para {
+.containers .para {
     color: var(--clr--transparent-white);
-    font-size: .7rem;
+    font-size: .8rem;
+    line-height: 2;
     margin: 1rem 0;
 }
 
-.learn-more {
+.containers a {
     background-color: var(--clr--veryLight-gray);
     display: inline-block;
     padding: .5em 1.5em;
@@ -58,7 +59,7 @@ h2 {
     border: 1px solid var(--clr--transparent-white);
 }
 
-.learn-more:hover {
+.containers a:hover {
     display: inline-block;
     padding: .5em 1.5em;
     text-decoration: none;
@@ -118,13 +119,17 @@ h2 {
         display: flex;
     }
     
-    .para {
+    .containers .para {
         margin: 1rem 0 3rem 0;
     }
         
     .sedans-container {
         border-radius: .3rem 0 0 .3rem;
     }   
+
+    .suvs-container .learn-more {
+        margin-top: 1.5rem;
+    }
 
     .luxurys-container {
         border-radius: 0 .3rem .3rem 0;
