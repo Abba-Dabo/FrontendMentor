@@ -50,12 +50,12 @@ body {
     left: 60%;
 }   
 
-#pattern-image {
+.container #pattern-image {
     width: 100%;
     border-radius: 1rem 1rem 0 0;
 }
 
-#person {
+.container #person {
     margin: -48px auto;
     border-radius: 50%;
     border: 5px solid var(--clr--white);
