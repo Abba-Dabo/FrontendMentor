@@ -20,8 +20,10 @@ body {
 
 .outer-container {
     max-width: 375px;
-    margin: 20vh auto;
-    padding: 2rem;
+    height: 100svh;
+    margin: 0 auto;
+    margin-top: 5svh;
+    padding: 0 2rem;
 }
 
 .container {
@@ -75,8 +77,11 @@ body {
 @media screen and (min-width: 376px) {
         
     .outer-container {
-        max-width: 750px;
-        margin: 20vh auto;   
+        max-width: 650px;
+        height: 80svh;
+        margin: 0 auto;
+        margin-top: 20svh;
+        overflow: ;
     }
 
     #divider {
