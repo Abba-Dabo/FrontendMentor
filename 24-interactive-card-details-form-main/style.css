@@ -20,5 +20,121 @@ body {
     font-weight: 500;
 }
 
+.outer-container {
+    background-color: var(--white);
+    width: 375px;
+    height: 100svh;
+    margin: 0 auto;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: 
+        'top-or-left'
+        'bottom-or-right'
+        'bottom-or-right';
+    /* gap: 1.5rem; */
+    position: relative;
+}
+
+.container #top-or-left {
+    grid-area: 'top-or-left';
+    background: url(/images/bg-main-mobile.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.container #bottom-or-right {
+    grid-area: 'bottom-or-right';
+}
+
+#card-front {
+    width: 300px;
+    height: 200px;
+    background: url(/images/bg-card-front.png) no-repeat center/contain;
+    background-position: center;
+    position: absolute;
+    top: 112px;
+    left: 0%;
+    margin-left: 1rem;
+    z-index: 2;
+}
+
+#card-back {
+    width: 300px;
+    height: 200px;
+    background: url(/images/bg-card-back.png) no-repeat center/contain;
+    background-position: center;
+    position: absolute;
+    top: 20px;
+    right: 0%;
+    margin-right: 1rem;
+}
+
+#card-front #circles {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 2rem 0 3rem 1rem;
+}
+
+#card-front .solid-circle {
+    background-color: var(--white);
+    height: 2rem;
+    width: 2rem;
+    margin-right: .6rem;
+    border-radius: 100%;
+}
+
+#card-front .line-circle {
+    height: .8rem;
+    width: .8rem;
+    border: 2px solid var(--white);
+    border-radius: 100%;
+
+}
+
+#card-front #card-number__demo {
+    font-size: 1.1rem;
+    word-spacing: 12px;
+    letter-spacing: .1rem;
+    margin-bottom: 1rem;
+}
+
+#card-front .name-and-expiration-date {
+    font-size: .7rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.name-and-expiration-date p {
+    letter-spacing: .08rem;
+}
+
+#cardholder-name__demo {
+    text-transform: uppercase;
+}
+
+#card-front .name-and-expiration-date, #card-number__demo {
+    width: 100%;
+    color: var(--white);
+    padding: 0 1rem;
+    
+}
+
+#card-back #card-cvc__demo {
+    color: var(--white);
+    position: absolute;
+    font-size: .7rem;
+    letter-spacing: .08rem;
+    top: 90px;
+    right: 40px;
+    z-index: 3;
+}
+
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
