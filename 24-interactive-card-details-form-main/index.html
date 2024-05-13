@@ -18,9 +18,8 @@
     <div class="outer-container">
       <div class="container">
         <div id="card-front">
-          <div id="circles">
-            <div class="solid-circle"></div>
-            <div class="line-circle"></div>
+          <div id="logo">
+            <img src="/images/card-logo.svg" alt="credit card logo" />
           </div>
           <h3 id="card-number__demo">0000 0000 0000 0000</h3>
           <div class="name-and-expiration-date">
@@ -80,14 +79,14 @@
             </div>
           </div>
 
-          <button type="submit">Confirm</button>
-
-          <!-- Completed state start -->
-          <!-- <div id="completed-state">
-            <h1 class="thanks">Thank you!</h1>
-            <p class="details">We've added your card details</p>
-            <button type="submit">Continue</button>
-          </div> -->
+          <button type="submit" class="btn btn-dark btn-block">Confirm</button>
+        </div>
+        <!-- Completed state start -->
+        <div id="completed-state">
+          <img src="/images/icon-complete.svg" alt="complete success icon" />
+          <h1 class="thanks">Thank you!</h1>
+          <p class="details">We've added your card details</p>
+          <button type="submit" class="btn btn-dark btn-block">Continue</button>
         </div>
       </div>
     </div>
