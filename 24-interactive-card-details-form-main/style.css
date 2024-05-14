@@ -240,7 +240,28 @@ body {
             'top-or-left bottom-or-right bottom-or-right';      ;
     }
 
+    .container #top-or-left {
+        background: url(/images/bg-main-desktop.png) no-repeat;
+    }
 
+    .container #bottom-or-right {
+        gap: 1rem;
+        margin-top: 10svh;
+        padding: 0 10rem 0 12rem;
+    }
+        
+    #card-front {
+        top: 60px;
+        left: 70px;
+        margin-left: 0rem;
+        z-index: 2;
+    }
+
+    #card-back {
+        top: 250px;
+        right: 55%;
+        margin-right: 0rem;
+    }
 }
 
 
