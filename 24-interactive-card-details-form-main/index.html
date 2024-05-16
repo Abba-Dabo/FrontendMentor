@@ -49,6 +49,9 @@
               id="card-number"
               placeholder="e.g. 1234 5678 9123 0000"
             />
+            <p class="card-number__error error-state">
+              Wrong format, numbers only
+            </p>
           </div>
           <div class="expiration-date-and-cvc--container">
             <div class="expiration-date-half">
@@ -67,15 +70,18 @@
                   placeholder="YY"
                 />
               </div>
+              <p class="expiration-date__error error-state">Can't be blank</p>
             </div>
             <div class="card-cvc-half">
               <label for="card-cvc">CVC</label>
               <input
                 type="text"
                 name="Card-cvc"
-                id="card-cvc"
                 placeholder="e.g. 123"
+                id="card-cvc"
+                class=""
               />
+              <p class="card-cvc__error error-state">Can't be blank</p>
             </div>
           </div>
 
