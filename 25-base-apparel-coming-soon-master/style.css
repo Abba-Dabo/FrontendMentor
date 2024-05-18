@@ -23,6 +23,20 @@ body {
     font-size: 16px;
 }
 
+.outer-container {
+    width: 375px;
+    height: 100svh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(10, 1fr);
+    margin: 0 auto;
+}
+
+.container {
+    padding: 1rem 2rem;
+}
+
+
 .attribution {
 font-size: 11px;
 text-align: center;
