@@ -24,6 +24,7 @@ body {
 }
 
 .outer-container {
+    background: linear-gradient(to bottom right, var(--linear-from), var(--linear-to));
     width: 375px;
     height: 100svh;
     display: grid;
@@ -41,7 +42,6 @@ body {
 }
 
 .base-container {
-    background: linear-gradient(to bottom right, var(--linear-from), var(--linear-to));
     margin: 0rem;
 }
 
@@ -76,10 +76,11 @@ body {
 }
 
 .base-container input {
+    background: transparent;
     width: 100%;
     line-height: 1.2rem;
     padding: .5rem 1rem;
-    border: 1px solid var(--desaturated-red);
+    border: 1px solid var(--linear-two-from);
     border-radius: 2rem;
 }
 
@@ -101,7 +102,8 @@ body {
     outline: none;
     border: none;
     border-radius: 2rem;
-    /* add shadow to this */
+    box-shadow: 0px 7px 20px -4px var(--desaturated-red);
+    cursor: pointer;
 }
 
 .base-container button img {
