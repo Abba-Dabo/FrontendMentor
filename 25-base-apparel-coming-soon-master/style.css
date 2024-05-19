@@ -41,6 +41,7 @@ body {
 }
 
 .base-container {
+    background: linear-gradient(to bottom right, var(--linear-from), var(--linear-to));
     margin: 0rem;
 }
 
@@ -66,7 +67,62 @@ body {
     font-size: .8rem;
     text-align: center;
     line-height: 1.2rem;
-    padding: 0 1rem 2rem 1rem;
+    padding: 0 1rem 1.5rem 1rem;
+}
+
+.base-container .input-and-button-container {
+    position: relative;
+    padding: 0 1rem;
+}
+
+.base-container input {
+    width: 100%;
+    line-height: 1.2rem;
+    padding: .5rem 1rem;
+    border: 1px solid var(--desaturated-red);
+    border-radius: 2rem;
+}
+
+.base-container input::placeholder {
+    color: var(--desaturated-red);
+    opacity: .5;
+}
+
+.base-container button {
+    background: linear-gradient(to right, var(--linear-two-from), var(--linear-two-to));
+    width: 3.3rem;
+    height: 2.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: calc(0% + 1rem);
+    outline: none;
+    border: none;
+    border-radius: 2rem;
+    /* add shadow to this */
+}
+
+.base-container button img {
+    margin-left: 4px;
+}
+
+.base-container .input-and-button-container p.error-state-note {
+    color: var(--soft-red);
+    font-size: .5rem;
+    text-align: left;
+    line-height: 1.2rem;
+    visibility: hidden;
+    padding: 0rem 0rem 0rem 1rem;
+}
+
+.error-state-image {
+    width: 1rem;
+    position: absolute;
+    visibility: hidden;
+    top: 17%;
+    right: 25%;
 }
 
 .attribution {

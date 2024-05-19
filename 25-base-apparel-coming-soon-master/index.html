@@ -32,12 +32,15 @@
           launch deals.
         </p>
         <div class="input-and-button-container">
-          <input
-            type="email"
-            name="email"
-            id="email"
-            placeholder="Email Address"
-          />
+          <div class="input-and-error-para-container">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Email Address"
+            />
+            <p class="error-state-note">Please provide a valid email</p>
+          </div>
           <button type="submit">
             <img src="/images/icon-arrow.svg" alt="" />
           </button>
@@ -46,7 +49,6 @@
             alt="error icon"
             class="error-state-image"
           />
-          <p class="error-state">Please provide a valid email</p>
         </div>
       </div>
     </div>
