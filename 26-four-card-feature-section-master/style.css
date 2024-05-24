@@ -111,6 +111,15 @@ p {
     justify-content: left;
 }
 
+@media screen and (min-width: 376px) {
+    .outer-container {
+        width: 1000px;
+        min-height: 90svh;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        margin-top: 2rem;
+    }
 
+}
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
