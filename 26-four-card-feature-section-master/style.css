@@ -125,6 +125,15 @@ p {
         gap: 1rem;
     }
 
+    .container > .heading {
+        font-size: 1.5rem;
+    }
+
+    .container > p {
+        padding: 0 13rem;
+        margin-bottom: 3rem;
+    }
+
     #cyan-card {
         grid-column: 1 / 2;
         grid-row: 2 / 4;
@@ -144,6 +153,7 @@ p {
         grid-column: 3 / -1;
         grid-row: 2 / 4;
     }
+
 }
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
