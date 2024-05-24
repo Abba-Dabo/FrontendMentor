@@ -26,13 +26,46 @@ body {
 
 .outer-container {
     width: 375px;
-    height: 100svh;
+    min-height: 100svh;
     margin: 0 auto;
 }
 
 .container {
     margin: 0 auto;
     padding: 1rem 2rem;
+}
+
+.container > .heading.bold {
+    margin-bottom: .7rem;
+}
+
+.container > p {
+    margin-bottom: 3.5rem;
+}
+
+.cards-group {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+.card .heading {
+    font-size: 1rem;
+}
+
+.card p {
+    font-size: .8rem;
+}
+
+.card .heading, .card p {
+    text-align: left;
+}
+
+.card img {
+    width: 2.5rem;
+    margin-top: 2rem;
+    align-self: flex-end;
 }
 
 /* Utility class */
@@ -55,7 +88,11 @@ p {
     background: #fff;
     width: 100%;
     border-radius: .8rem;
-    box-shadow: 0px 7px 20px -10px var(--grayish-blue);;
+    box-shadow: 0px 7px 20px -10px var(--grayish-blue);
+    padding: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
 }
 
 
