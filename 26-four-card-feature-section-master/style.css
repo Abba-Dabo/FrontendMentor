@@ -68,6 +68,22 @@ body {
     align-self: flex-end;
 }
 
+#cyan-card {
+    border-top: 4px solid var(--cyan);
+}
+
+#red-card {
+    border-top: 4px solid var(--red);
+}
+
+#yellow-card {
+    border-top: 4px solid var(--orange);
+}
+
+#blue-card {
+    border-top: 4px solid var(--blue);
+}
+
 /* Utility class */
 .light {
     font-weight: var(--fw-200);
@@ -87,7 +103,7 @@ p {
 .card {
     background: #fff;
     width: 100%;
-    border-radius: .8rem;
+    border-radius: .6rem;
     box-shadow: 0px 7px 20px -10px var(--grayish-blue);
     padding: 1.2rem;
     display: flex;
