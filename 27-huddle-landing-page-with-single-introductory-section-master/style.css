@@ -48,6 +48,25 @@ body {
     grid-row: 2 / 3;
 }
 
+.cta-container {
+    grid-column: 1 / -1;
+    grid-row: 3 / 4;
+}
+
+.cta-container .heading {
+    font-size: 1.2rem;
+    font-family: var(--ff-heading);
+    margin-top: 2.5rem;
+    padding: 0 2.5rem;
+}
+
+.cta-container p {
+    font-family: var(--ff-body);
+    line-height: 1.2rem;
+    padding: 1rem 1.2rem;
+}
+
+
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
