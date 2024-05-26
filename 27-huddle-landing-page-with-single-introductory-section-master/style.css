@@ -95,13 +95,45 @@ body {
         background-position: center;
         background-size: cover;
         width: 1440px;
-        min-height: 70svh;
+        min-height: 50svh;
     }
 
     .container {
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 1fr 4fr 1fr;
+        grid-template-rows: 1fr 5fr 1fr;
+        gap: 0 1rem;
     }
+    
+    .container .hero-image {
+        width: 100%;
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+
+    .cta-container {
+        grid-column: 2 / -1;
+        grid-row: 2 / 3;
+        padding: 1rem;
+    }
+        
+    .cta-container .heading {
+        font-size: 2rem;
+        margin-top: 0;
+        padding: 0 15rem 0 0;
+        
+    }
+
+    .cta-container p {
+        font-family: var(--ff-body);
+        line-height: 1.2rem;
+        padding: 1rem 12rem 1rem 0;
+    }
+
+    .cta-container button {
+        background: #fff;
+        width: 20%;
+    }
+
 }
 
 
