@@ -85,6 +85,25 @@ body {
     padding: 0 7rem;
 }
 
+@media screen and (min-width: 376px) {
+    body {
+        text-align: left;
+    }
+
+    .outer-container {
+        background-image: url(/images/bg-desktop.svg);
+        background-position: center;
+        background-size: cover;
+        width: 1440px;
+        min-height: 70svh;
+    }
+
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr 4fr 1fr;
+    }
+}
+
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
