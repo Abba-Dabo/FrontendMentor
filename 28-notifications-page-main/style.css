@@ -19,7 +19,7 @@
 }
 
 body {
-    background: var(--light-grayish-blue-1);
+    background: var(--light-grayish-blue-2);
     color: var(--grayish-blue);
     font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 16px;
@@ -115,6 +115,7 @@ body {
 
 .recent-comment {
     color: var(--dark-grayish-blue);
+    font-weight: var(--fw-800);
 }
 
 .time-after {
@@ -134,6 +135,21 @@ body {
         min-height: 100svh;
         margin: 3rem auto;
         border-radius: 1rem;
+    }
+
+    
+    .users-container .user-name-and-info .user-name:hover, .recent-comment:hover {
+        color: var(--blue);
+        cursor: pointer;
+    }
+
+    .message:hover {
+        background: var(--light-grayish-blue-1);
+        cursor: pointer;
+    }
+
+    .user.not-opened .group-joined:hover {
+        cursor: pointer;
     }
 }
 
