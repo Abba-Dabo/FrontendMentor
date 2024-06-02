@@ -88,7 +88,7 @@ body {
 .user-info__container {
     display: flex;
     flex-direction: column;
-    gap: .4rem;
+    gap: .3rem;
     justify-content: start;
     align-items: start;
 }
@@ -105,6 +105,26 @@ body {
 .user.not-opened {
     background: var(--very-light-grayish-blue);
     border-radius: .6rem;
+}
+
+.group-joined {
+    color: var(--blue);
+    font-weight: var(--fw-800);
+}
+
+.recent-comment {
+    color: var(--dark-grayish-blue);
+}
+
+.time-after {
+    font-size: .8rem;
+}
+
+.message {
+    margin: .5rem 0;
+    padding: .8rem;
+    border: 1px solid var(--grayish-blue);
+    border-radius: .5rem;
 }
 
 .attribution { font-size: 11px; text-align: center; }
