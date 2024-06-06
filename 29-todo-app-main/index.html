@@ -1,36 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Todo app</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>Frontend Mentor | Todo app</title>
+  </head>
+  <body>
+    <div class="outer-container">
+      <div class="container">
+        <div id="logo-and-color__container">
+          <div class="logo">Todo</div>
+          <img src="/images/icon-moon.svg" alt="" class="color-mode" />
+        </div>
+        <div id="todo-body__container">
+          <div id="todo-input-container">
+            <input type="checkbox" name="check-to-add" id="input-checkbox" />
+            <input type="text" name="text-to-add" id="input-area" />
+          </div>
+          <div class="todo-item-container">
+            <input type="checkbox" name="" id="-checkbox" />
+            <p class="todo-text">1st todo</p>
+            <img
+              src="/images/icon-cross.svg"
+              alt="todo remove button"
+              class="remove-botton"
+            />
+          </div>
+          <div class="todo-item-container">
+            <input type="checkbox" name="" id="-checkbox" />
+            <p class="todo-text">2nd todo</p>
+            <img
+              src="/images/icon-cross.svg"
+              alt="todo remove button"
+              class="remove-botton"
+            />
+          </div>
+          <div class="todo-item-container">
+            <input type="checkbox" name="" id="-checkbox" />
+            <p class="todo-text">3th todo</p>
+            <img
+              src="/images/icon-cross.svg"
+              alt="todo remove button"
+              class="remove-botton"
+            />
+          </div>
+          <div class="todo-item-container">
+            <input type="checkbox" name="" id="-checkbox" />
+            <p class="todo-text">4th todo</p>
+            <img
+              src="/images/icon-cross.svg"
+              alt="todo remove button"
+              class="remove-botton"
+            />
+          </div>
+          <div id="todo-status-filter">
+            <!-- Add dynamic number -->
+            <p>items left</p>
+            <p>Clear Completed</p>
+          </div>
+        </div>
+        <div id="todo-status-filter">
+          <p>All</p>
+          <p>Active</p>
+          <p>Completed</p>
+        </div>
+        <p id="drag-and-drop">Drag and drop to reorder list</p>
+      </div>
+    </div>
 
-  Todo
-
-  <!-- Add dynamic number --> items left
-
-  All
-  Active 
-  Completed
-
-  Clear Completed
-
-  Drag and drop to reorder list
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </body>
 </html>
