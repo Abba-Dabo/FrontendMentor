@@ -30,6 +30,7 @@ body {
     background-position: top;
     background-repeat: no-repeat;
     background-size: auto;
+    color: var(--very-dark-grayish-blue--light-theme);
     font-family: 'Josefin Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 18px;
 }
@@ -62,7 +63,7 @@ body {
 }
 
 #logo-and-mode-switch__container .logo {
-    color: var(--very-light-gray);
+    color: var(--very-light-gray--light-theme);
     font-size: 1.5rem;
     font-weight: var(--fw-700);
     text-transform: uppercase;
@@ -75,7 +76,7 @@ body {
 }
 
 #todo-input-container, #todo-body__container {
-    background: var(--very-light-gray);
+    background: var(--very-light-gray--light-theme);
 }
 
 #todo-input-container input {
@@ -109,8 +110,13 @@ body {
     border-radius: 5px;
 }
 
-#todo-body__container, #todo-status-filter {
-    box-shadow: 0px 7px 20px -15px var(--very-dark-desaturated-blue);
+#todo-body__container {
+    box-shadow: 0px 0px 30px -20px var(--very-dark-grayish-blue--light-theme);
+}
+
+#todo-status-filter {
+    box-shadow: 0px 0px 120px -20px var(--very-dark-grayish-blue--light-theme);
+    z-index: -1;
 }
 
 .checkbox-and-para-container {
@@ -122,19 +128,28 @@ body {
 }
 
 .todo-item-container {
-    border-bottom: 1px solid var(--light-grayish-blue);
+    border-bottom: 1px solid var(--light-grayish-blue--light-theme);
 }
 
 .todo-item-container img {
     width: .8rem;
 }
 
-#remaining-items-and-clearer p {
-    color: var(--light-grayish-blue);
+#remaining-items-and-clearer p, #drag-and-drop--info {
+    color: var(--dark-grayish-blue--light-theme);
 }
 
 #todo-status-filter {
+    padding: 1rem 4rem;
+}
 
+#todo-status-filter p#active {
+    color: var(--bright-blue);
+}
+
+#drag-and-drop--info {
+    text-align: center;
+    margin-top: 2rem;
 }
 
 .attribution { font-size: 11px; text-align: center; }
