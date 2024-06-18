@@ -2,18 +2,18 @@
     --bright-blue: hsl(220, 98%, 61%);
     --check-background-linear-gradient-from: hsl(192, 100%, 67%);
     --check-background-linear-gradient-to: hsl(280, 87%, 65%);
-    --very-light-gray: hsl(0, 0%, 98%);
-    --very-light-grayish-blue: hsl(236, 33%, 92%);
-    --light-grayish-blue: hsl(233, 11%, 84%);
-    --dark-grayish-blue: hsl(236, 9%, 61%);
-    --very-dark-grayish-blue: hsl(235, 19%, 35%);
-    --very-dark-blue: hsl(235, 21%, 11%);
-    --very-dark-desaturated-blue: hsl(235, 24%, 19%);
-    --light-grayish-blue: hsl(234, 39%, 85%);
-    --light-grayish-blue--hover: hsl(236, 33%, 92%);
-    --dark-grayish-blue: hsl(234, 11%, 52%);
-    --very-dark-grayish-blue: hsl(233, 14%, 35%);
-    --very-dark-grayish-blue: hsl(237, 14%, 26%);
+    --very-light-gray--light-theme: hsl(0, 0%, 98%);
+    --very-light-grayish-blue--light-theme: hsl(236, 33%, 92%);
+    --light-grayish-blue--light-theme: hsl(233, 11%, 84%);
+    --dark-grayish-blue--light-theme: hsl(236, 9%, 61%);
+    --very-dark-grayish-blue--light-theme: hsl(235, 19%, 35%);
+    --very-dark-blue--dark-theme: hsl(235, 21%, 11%);
+    --very-dark-desaturated-blue--dark-theme: hsl(235, 24%, 19%);
+    --light-grayish-blue--dark-theme: hsl(234, 39%, 85%);
+    --light-grayish-blue--dark-theme--hover: hsl(236, 33%, 92%);
+    --dark-grayish-blue--dark-theme: hsl(234, 11%, 52%);
+    --very-dark-grayish-blue--dark-theme-1: hsl(233, 14%, 35%);
+    --very-dark-grayish-blue--dark-theme-2: hsl(237, 14%, 26%);
     --fw-400: 400;
     --fw-700: 700;
 }
@@ -29,7 +29,7 @@ body {
     background-image: url(/images/bg-desktop-light.jpg);
     background-position: top;
     background-repeat: no-repeat;
-    background-attachment: contain;
+    background-size: auto;
     font-family: 'Josefin Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 18px;
 }
@@ -42,6 +42,7 @@ body {
 }
 
 .container {
+    width: 100%;
     position: absolute;
     top: 0;
     left: 0;
@@ -57,7 +58,7 @@ body {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin: 1.5rem 0;
+    margin: 3rem 0;
 }
 
 #logo-and-mode-switch__container .logo {
@@ -71,6 +72,69 @@ body {
 
 #logo-and-mode-switch__container img.mode-switch {
     width: 1.2rem;
+}
+
+#todo-input-container, #todo-body__container {
+    background: var(--very-light-gray);
+}
+
+#todo-input-container input {
+    border: none;
+    outline: none;
+}
+
+#todo-input-container input[type=text] {
+    min-width: 90%;
+}
+
+#todo-input-container input::placeholder {
+   font-family: 'Josefin Sans';
+}
+
+#todo-body__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#todo-input-container, .todo-item-container , #remaining-items-and-clearer, #todo-status-filter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.2rem;
+}
+
+#todo-input-container, #todo-body__container,  #todo-status-filter {
+    border-radius: 5px;
+}
+
+#todo-body__container, #todo-status-filter {
+    box-shadow: 0px 7px 20px -15px var(--very-dark-desaturated-blue);
+}
+
+.checkbox-and-para-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    gap: 1rem;
+}
+
+.todo-item-container {
+    border-bottom: 1px solid var(--light-grayish-blue);
+}
+
+.todo-item-container img {
+    width: .8rem;
+}
+
+#remaining-items-and-clearer p {
+    color: var(--light-grayish-blue);
+}
+
+#todo-status-filter {
+
 }
 
 .attribution { font-size: 11px; text-align: center; }

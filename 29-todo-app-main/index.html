@@ -21,14 +21,21 @@
           <div class="logo">Todo</div>
           <img src="/images/icon-moon.svg" alt="" class="mode-switch" />
         </div>
+        <div id="todo-input-container">
+          <input type="checkbox" name="check-to-add" id="input-checkbox" />
+          <input
+            type="text"
+            name="text-to-add"
+            id="input-area"
+            placeholder="Create a new todo"
+          />
+        </div>
         <div id="todo-body__container">
-          <div id="todo-input-container">
-            <input type="checkbox" name="check-to-add" id="input-checkbox" />
-            <input type="text" name="text-to-add" id="input-area" />
-          </div>
           <div class="todo-item-container">
-            <input type="checkbox" name="" id="-checkbox" />
-            <p class="todo-text">1st todo</p>
+            <div class="checkbox-and-para-container">
+              <input type="checkbox" name="" id="-checkbox" />
+              <p class="todo-text">1st todo</p>
+            </div>
             <img
               src="/images/icon-cross.svg"
               alt="todo remove button"
@@ -36,8 +43,10 @@
             />
           </div>
           <div class="todo-item-container">
-            <input type="checkbox" name="" id="-checkbox" />
-            <p class="todo-text">2nd todo</p>
+            <div class="checkbox-and-para-container">
+              <input type="checkbox" name="" id="-checkbox" />
+              <p class="todo-text">2nd todo</p>
+            </div>
             <img
               src="/images/icon-cross.svg"
               alt="todo remove button"
@@ -45,8 +54,10 @@
             />
           </div>
           <div class="todo-item-container">
-            <input type="checkbox" name="" id="-checkbox" />
-            <p class="todo-text">3th todo</p>
+            <div class="checkbox-and-para-container">
+              <input type="checkbox" name="" id="-checkbox" />
+              <p class="todo-text">3th todo</p>
+            </div>
             <img
               src="/images/icon-cross.svg"
               alt="todo remove button"
@@ -54,15 +65,17 @@
             />
           </div>
           <div class="todo-item-container">
-            <input type="checkbox" name="" id="-checkbox" />
-            <p class="todo-text">4th todo</p>
+            <div class="checkbox-and-para-container">
+              <input type="checkbox" name="" id="-checkbox" />
+              <p class="todo-text">4th todo</p>
+            </div>
             <img
               src="/images/icon-cross.svg"
               alt="todo remove button"
               class="remove-botton"
             />
           </div>
-          <div id="todo-status-filter">
+          <div id="remaining-items-and-clearer">
             <!-- Add dynamic number -->
             <p>items left</p>
             <p>Clear Completed</p>
