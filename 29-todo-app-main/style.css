@@ -156,6 +156,39 @@ body {
     margin-top: 2rem;
 }
 
+/* Styling Checkboxes */
+.all-checkboxes, .all-checkboxes input, .checkbox-border {
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.all-checkboxes {
+    display: block;
+    position: relative;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.all-checkboxes input, .checkbox-border {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+ 
+.all-checkboxes input {
+    opacity: 0;
+}
+
+.checkbox-border {
+    border: 1px solid var(--light-grayish-blue--light-theme);
+}
+
+
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
