@@ -179,7 +179,6 @@ body {
     left: 0;
 }
 
- 
 .all-checkboxes input {
     opacity: 0;
 }
@@ -187,6 +186,31 @@ body {
 .checkbox-border {
     border: 1px solid var(--light-grayish-blue--light-theme);
 }
+
+/* When the checkbox is checked, add a linear-gradient background to the checkmark*/
+.todo-item-container .all-checkboxes input:checked ~ .checkbox-border {
+    background: linear-gradient(to right, var(--check-background-linear-gradient-from), var(--check-background-linear-gradient-to));
+}
+
+/* Create the checkmark (hidden when not checked) */
+.todo-item-container .all-checkboxes .checkbox-border::after {
+    content: url(/images/icon-check.svg);
+    position: absolute;
+    margin-left: 3px;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.todo-item-container .all-checkboxes input:checked ~ .checkbox-border:after {
+    display: block;
+}
+
+/* Cross any relative text on checking it checkbox */
+.todo-item-container .all-checkboxes:has(input:checked) ~ .todo-text {
+    text-decoration: line-through;
+    opacity: .5;
+}
+
 
 
 
